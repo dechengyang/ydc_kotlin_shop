@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--定义输入规范-->
+
+    <!--用户名-->
+    <integer name="user_name_lenght">16</integer>
+
+    <!--手机号-->
+    <integer name="phone_lenght">11</integer>
+
+    <!--密码-->
+    <integer name="pass_lenght">16</integer>
+
+    <!--验证码-->
+    <integer name="verification_code_lenght">20</integer>
+
+    <!--邀请码-->
+    <integer name="invitation_code_lenght">20</integer>
+
+    <!--充值提现-->
+    <integer name="recharge_lenght">12</integer>
+
+</resources>

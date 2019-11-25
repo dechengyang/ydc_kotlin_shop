@@ -1,0 +1,2 @@
+include ':app', ':ydcstaticresource'
+rootProject.name='ydc_kotlin_shop'

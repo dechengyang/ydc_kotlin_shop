@@ -1,0 +1,425 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="BaseTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <!--  <item name="colorPrimary">@color/colorPrimary</item>
+          <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+          <item name="colorAccent">@color/colorAccent</item>-->
+
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@android:color/white</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+
+
+
+    </style>
+
+    <style name="AppTheme" parent="BaseTheme"></style>
+
+    <!-- 更新dialog的样式 -->
+    <style name="update_dialog_style">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+
+    <style name="update_pgb_style" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:maxHeight">50dip</item>
+        <item name="android:minHeight">8dip</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">
+            @android:drawable/progress_indeterminate_horizontal
+        </item>
+
+    </style>
+
+
+    <!-- title的标题 -->
+    <style name="Text">
+        <item name="android:textStyle">normal</item>
+    </style>
+
+
+    <!--tab的主题-->
+    <style name="Tab_Style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">49dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <!-- Title theme -->
+    <style name="Text.Title_Button" parent="@style/Text">
+        <item name="android:textColor">@color/black_6</item>
+        <item name="android:textSize">@dimen/size_15_sp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="Text.Title" parent="@style/Text">
+        <item name="android:textColor">@color/title_text</item>
+        <item name="android:textSize">@dimen/size_20_sp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!--ydc-->
+    <style name="TabLayoutTextAppearance" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="line_hor2">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <!--<item name="android:background">@color/line2</item>-->
+    </style>
+
+    <style name="WrapMatch">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+
+    <style name="MatchWrap">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="WrapWrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="MatchMatch">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="MatchAuto">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">0dp</item>
+    </style>
+
+    <style name="AutoMatch">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="WrapAuto">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">0dp</item>
+    </style>
+
+    <style name="AutoWrap">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="AutoOne">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">1dp</item>
+    </style>
+
+    <style name="WrapMatch.Vertical">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="WrapMatch.Horizontal">
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="MatchWrap.Vertical">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="MatchWrap.Horizontal">
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="WrapWrap.Vertical">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="WrapWrap.Horizontal">
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="MatchMatch.Vertical">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="MatchMatch.Horizontal">
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="MatchAuto.Vertical">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="MatchAuto.Horizontal">
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="AutoMatch.Vertical">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="AutoMatch.Horizontal">
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="WrapAuto.Vertical">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="WrapAuto.Horizontal">
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="AutoWrap.Vertical">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="AutoWrap.Horizontal">
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="MatchOne">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+    </style>
+
+    <style name="OneMatch">
+        <item name="android:layout_width">1px</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="MatchHeight_30">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">30dp</item>
+    </style>
+
+    <style name="MatchHeight_45">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">45dp</item>
+    </style>
+
+    <style name="MatchHeight_40">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+    </style>
+
+    <style name="MatchHeight_50">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+    </style>
+
+    <style name="MatchHeight_55">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">55dp</item>
+    </style>
+
+    <style name="MatchHeight_90">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">90dp</item>
+    </style>
+
+    <style name="MatchHeight_200">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">200dp</item>
+    </style>
+
+    <style name="WrapHeight_200">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">200dp</item>
+    </style>
+
+    <style name="MatchHeight_150">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">150dp</item>
+    </style>
+
+    <style name="MatchHeight_77">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">77dp</item>
+    </style>
+
+    <style name="MatchHeight_80">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">80dp</item>
+    </style>
+
+    <style name="MatchHeight_100">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">100dp</item>
+    </style>
+
+    <style name="MatchHeight_116">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">116dp</item>
+    </style>
+
+    <style name="MatchHeight_120">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">120dp</item>
+    </style>
+
+    <style name="MatchHeight_140">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">140dp</item>
+    </style>
+
+    <style name="MatchHeight_180">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">180dp</item>
+    </style>
+
+    <style name="MatchHeight_250">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">250dp</item>
+    </style>
+
+    <style name="MatchWidth_45">
+        <item name="android:layout_width">45dp</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="MatchWidth_50">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="WrapHeight_45">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">45dp</item>
+    </style>
+
+    <style name="WrapHeight_50">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">50dp</item>
+    </style>
+
+    <style name="WrapWidth_45">
+        <item name="android:layout_width">45dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="WrapWidth_50">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="WidthHeight_30">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+    </style>
+
+    <style name="WidthHeight_60">
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">60dp</item>
+    </style>
+
+    <style name="FillHeight_30">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">30dp</item>
+    </style>
+
+    <style name="FillHeight_40">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">40dp</item>
+    </style>
+    <style name="FillHeight_50">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">40dp</item>
+    </style>
+
+    <style name="FillHeight_42">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">42dp</item>
+    </style>
+
+    <style name="FillHeight_44">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">44dp</item>
+    </style>
+
+    <style name="FillHeight_45">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">45dp</item>
+    </style>
+
+    <style name="FillHeight_52">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">52dp</item>
+    </style>
+
+    <style name="Text14_grey">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@color/Grey_3</item>
+        <item name="android:textSize">@dimen/text_size_14</item>
+    </style>
+
+
+    <style name="Text14_blue">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@color/bc29</item>
+        <item name="android:textSize">@dimen/text_size_14</item>
+    </style>
+
+    <style name="Text14_black">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@color/black_1</item>
+        <item name="android:textSize">@dimen/text_size_14</item>
+    </style>
+
+    <style name="Text16_grey">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@color/Grey_3</item>
+        <item name="android:textSize">@dimen/text_size_16</item>
+    </style>
+
+
+    <!--LoadingLayout-end-->
+
+    <!--ydc 对话框样式-->
+    <style name="NoTitleAndBackgroundDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+    </style>
+
+    <style name="alert_dialog" parent="android:Theme.Dialog">
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowBackground">@color/float_transparent</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.4</item>
+    </style>
+
+</resources>

@@ -1,0 +1,18 @@
+<!--红色按钮-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="true" android:state_pressed="true">
+        <shape>
+            <solid android:color="@color/goods_red_btn_click" />
+            <corners android:radius="5dp" />
+        </shape>
+    </item>
+
+    <item android:drawable="@drawable/btn_gray_background" android:state_enabled="false" />
+
+    <item>
+        <shape>
+            <solid android:color="@color/goods_red_btn" />
+            <corners android:radius="5dp" />
+        </shape>
+    </item>
+</selector>

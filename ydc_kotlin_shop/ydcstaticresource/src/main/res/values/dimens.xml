@@ -1,0 +1,154 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <!-- 用于字体大小  sp  size_xxx_sp -->
+    <dimen name="size_10_sp">10sp</dimen>
+    <dimen name="size_11_sp">11sp</dimen>
+    <dimen name="size_12_sp">12sp</dimen>
+    <dimen name="size_13_sp">13sp</dimen>
+    <dimen name="size_14_sp">14sp</dimen>
+    <dimen name="size_15_sp">15sp</dimen>
+    <dimen name="size_16_sp">16sp</dimen>
+    <dimen name="size_17_sp">17sp</dimen>
+    <dimen name="size_18_sp">18sp</dimen>
+    <dimen name="size_20_sp">20sp</dimen>
+    <dimen name="size_22_sp">22sp</dimen>
+    <dimen name="size_24_sp">24sp</dimen>
+    <dimen name="size_28_sp">28sp</dimen>
+    <dimen name="size_34_sp">34sp</dimen>
+
+
+    <!--  用于距离 dp  divide_xxx_dp-->
+    <dimen name="divide_1_dp">1dp</dimen>
+    <dimen name="divide_2_dp">2dp</dimen>
+    <dimen name="divide_3_dp">3dp</dimen>
+    <dimen name="divide_4_dp">4dp</dimen>
+    <dimen name="divide_5_dp">5dp</dimen>
+    <dimen name="divide_6_dp">6dp</dimen>
+    <dimen name="divide_8_dp">8dp</dimen>
+    <dimen name="divide_10_dp">10dp</dimen>
+    <dimen name="divide_12_dp">12dp</dimen>
+    <dimen name="divide_13_dp">13dp</dimen>
+    <dimen name="divide_14_dp">14dp</dimen>
+    <dimen name="divide_15_dp">15dp</dimen>
+    <dimen name="divide_16_dp">16dp</dimen>
+    <dimen name="divide_18_dp">18dp</dimen>
+    <dimen name="divide_20_dp">20dp</dimen>
+    <dimen name="divide_22_dp">22dp</dimen>
+    <dimen name="divide_24_dp">24dp</dimen>
+    <dimen name="divide_25_dp">25dp</dimen>
+    <dimen name="divide_26_dp">26dp</dimen>
+    <dimen name="divide_28_dp">28dp</dimen>
+    <dimen name="divide_30_dp">30dp</dimen>
+    <dimen name="divide_35_dp">35dp</dimen>
+    <dimen name="divide_36_dp">36dp</dimen>
+    <dimen name="divide_40_dp">40dp</dimen>
+    <dimen name="divide_45_dp">45dp</dimen>
+    <dimen name="divide_50_dp">50dp</dimen>
+    <dimen name="divide_60_dp">60dp</dimen>
+    <dimen name="divide_70_dp">70dp</dimen>
+    <dimen name="divide_75_dp">75dp</dimen>
+    <dimen name="divide_80_dp">80dp</dimen>
+    <dimen name="divide_90_dp">90dp</dimen>
+    <dimen name="divide_100_dp">100dp</dimen>
+    <dimen name="divide_105_dp">105dp</dimen>
+    <dimen name="divide_120_dp">120dp</dimen>
+    <dimen name="divide_130_dp">130dp</dimen>
+    <dimen name="divide_150_dp">150dp</dimen>
+    <dimen name="divide_180_dp">180dp</dimen>
+    <dimen name="divide_23_dp">23dp</dimen>
+
+    <!-- 分割线 大小-->
+    <dimen name="line_1_px">1px</dimen>
+
+    <dimen name="button_line">1dp</dimen>
+    <!-- 下拉刷新字体 -->
+    <dimen name="picture_pull_to_refresh_loading_text_size">14dp</dimen>
+    <dimen name="picture_pull_to_refresh_last_update_time_text_size">10dp</dimen>
+    <dimen name="picture_pull_to_refresh_last_update_time_top_margin">6dp</dimen>
+    <dimen name="picture_pull_to_refresh_footer_height">40dp</dimen>
+    <!-- edit高度-->
+    <dimen name="edit_height">44dp</dimen>
+    <dimen name="button_height">40dp</dimen>
+
+    <!-- google风格刷新View -->
+    <!--头部view的高度-->
+    <dimen name="refresh_header_height_google">80dp</dimen>
+    <!--下拉的高度-->
+    <dimen name="refresh_trigger_offset_google">80dp</dimen>
+    <!--下拉的最大高度-->
+    <dimen name="refresh_final_offset_google">150dp</dimen>
+    <!--下拉圆的大小-->
+    <dimen name="refresh_drawable_size_google">40dp</dimen>
+
+    <!--底部view的高度-->
+    <dimen name="load_more_footer_height_google">72dp</dimen>
+    <!--上拉的高度-->
+    <dimen name="load_more_trigger_offset_google">72dp</dimen>
+    <!--上拉的最大高度-->
+    <dimen name="load_more_final_offset_google">120dp</dimen>
+    <!--上拉圆的大小-->
+    <dimen name="load_more_drawable_size_google">36dp</dimen>
+
+    <!-- 顶部按钮栏高度 -->
+    <dimen name="picker_view_topBar_height">44dp</dimen>
+    <!-- 顶部按钮paddingLeft -->
+    <dimen name="picker_view_topBar_paddingLeft">10dp</dimen>
+    <!-- 顶部按钮paddingRight -->
+    <dimen name="picker_view_topBar_paddingRight">30dp</dimen>
+    <!-- 顶部按钮文字大小 -->
+    <dimen name="picker_view_topBar_btn_textSize">20sp</dimen>
+    <dimen name="picker_view_topBar_title_textSize">21sp</dimen>
+    <!-- 选项文字大小 需要配合 bools.xml 的 pickerview_customTextSize 为 true 才有效果-->
+    <dimen name="picker_view_textSize">20sp</dimen>
+
+
+    <dimen name="card_margin">5dp</dimen>
+    <dimen name="news_image_width">86dp</dimen>
+    <dimen name="news_image_height">60dp</dimen>
+
+    <dimen name="popmenu_width">100.0dip</dimen>
+    <dimen name="popmenu_yoff">9dip</dimen>
+    <dimen name="popmenu_yoff_grab">0dip</dimen>
+    <dimen name="img_wight">48dp</dimen>
+    <dimen name="linehigh">0.5dp</dimen>
+    <dimen name="popgrab_menu_width">154dip</dimen>
+
+    <dimen name="title_padding_top">10dp</dimen>
+    <dimen name="login_margin_top">65dp</dimen>
+    <dimen name="login_margin_top_2">45dp</dimen>
+
+    <!-- 几种文字大小常量 -->
+    <dimen name="text_size_9">9dp</dimen>
+    <dimen name="text_size_10">10dp</dimen>
+    <dimen name="text_size_11">11dp</dimen>
+    <dimen name="text_size_12">12dp</dimen>
+    <dimen name="text_size_13">13dp</dimen>
+    <dimen name="text_size_14">14dp</dimen>
+    <dimen name="text_size_15">15dp</dimen>
+    <dimen name="text_size_16">16dp</dimen>
+    <dimen name="text_size_17">17dp</dimen>
+    <dimen name="text_size_18">18dp</dimen>
+    <dimen name="text_size_19">19dp</dimen>
+    <dimen name="text_size_20">20dp</dimen>
+    <dimen name="text_size_22">20dp</dimen>
+    <dimen name="text_size_23">20dp</dimen>
+    <dimen name="text_size_21">21dp</dimen>
+    <dimen name="text_size_24">24dp</dimen>
+    <dimen name="text_size_25">25dp</dimen>
+    <dimen name="text_size_30">30dp</dimen>
+    <dimen name="text_size_40">40dp</dimen>
+    <dimen name="text_size_45">45dp</dimen>
+    <dimen name="text_size_50">50dp</dimen>
+    <dimen name="text_size_32">32dp</dimen>
+    <dimen name="text_size_36">36dp</dimen>
+    <dimen name="text_size_35">35dp</dimen>
+    <dimen name="text_size_46">46dp</dimen>
+    <dimen name="text_size_48">48dp</dimen>
+    <dimen name="text_size_60">60dp</dimen>
+    <dimen name="actionbar_height">48dip</dimen>
+</resources>

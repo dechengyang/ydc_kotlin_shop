@@ -1,0 +1,123 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_layout"
+    style="@style/MatchMatch"
+    android:background="@color/tab_background"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+    <!--
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false"
+    用于沉垫式状态栏
+    -->
+    <FrameLayout
+        android:id="@+id/container"
+        style="@style/MatchAuto" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#DBDBDB" />
+
+    <LinearLayout
+        style="@style/MatchWrap"
+        android:background="@color/white"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <yicheng.android.ui.materialdesignlibrary.views.LayoutRipple
+            android:id="@+id/tab_home"
+            style="@style/Tab_Style">
+
+            <ImageView
+                android:id="@+id/tab_home_icon"
+                android:layout_width="@dimen/divide_25_dp"
+                android:layout_height="@dimen/divide_25_dp"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/home_normal_icon" />
+
+            <TextView
+                android:id="@+id/tab_home_text"
+                style="@style/WrapWrap"
+                android:layout_below="@id/tab_home_icon"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/divide_2_dp"
+                android:text="@string/home"
+                android:textColor="@color/tab_text_pressed"
+                android:textSize="10sp" />
+        </yicheng.android.ui.materialdesignlibrary.views.LayoutRipple>
+
+        <yicheng.android.ui.materialdesignlibrary.views.LayoutRipple
+            android:id="@+id/tab_category"
+            style="@style/Tab_Style">
+
+            <ImageView
+                android:id="@+id/tab_category_icon"
+                android:layout_width="@dimen/divide_25_dp"
+                android:layout_height="@dimen/divide_25_dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/category_normal_icon" />
+
+            <TextView
+                android:id="@+id/tab_category_text"
+                style="@style/WrapWrap"
+                android:layout_below="@id/tab_category_icon"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/divide_2_dp"
+                android:text="分类"
+                android:textColor="@color/tab_text"
+                android:textSize="10sp" />
+        </yicheng.android.ui.materialdesignlibrary.views.LayoutRipple>
+
+
+        <yicheng.android.ui.materialdesignlibrary.views.LayoutRipple
+            android:id="@+id/tab_shoppingcart"
+            style="@style/Tab_Style">
+
+            <ImageView
+                android:id="@+id/tab_shoppingcart_icon"
+                android:layout_width="@dimen/divide_25_dp"
+                android:layout_height="@dimen/divide_25_dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/shoppingcart_normal_icon" />
+
+            <TextView
+                android:id="@+id/tab_shoppingcart_text"
+                style="@style/WrapWrap"
+                android:layout_below="@id/tab_shoppingcart_icon"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/divide_2_dp"
+                android:text="购物车"
+                android:textColor="@color/tab_text"
+                android:textSize="10sp" />
+        </yicheng.android.ui.materialdesignlibrary.views.LayoutRipple>
+
+        <yicheng.android.ui.materialdesignlibrary.views.LayoutRipple
+            android:id="@+id/tab_my"
+            style="@style/Tab_Style">
+
+            <ImageView
+                android:id="@+id/tab_my_icon"
+                android:layout_width="@dimen/divide_25_dp"
+                android:layout_height="@dimen/divide_25_dp"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/my_normal_icon" />
+
+            <TextView
+                android:id="@+id/tab_my_text"
+                style="@style/WrapWrap"
+                android:layout_below="@id/tab_my_icon"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/divide_2_dp"
+                android:text="@string/my"
+                android:textColor="@color/tab_text"
+                android:textSize="10sp" />
+        </yicheng.android.ui.materialdesignlibrary.views.LayoutRipple>
+    </LinearLayout>
+
+
+</LinearLayout>

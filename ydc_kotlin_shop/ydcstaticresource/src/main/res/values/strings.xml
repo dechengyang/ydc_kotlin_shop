@@ -1,0 +1,719 @@
+<resources xmlns:tools="http://schemas.android.com/tools"    tools:ignore="MissingTranslation">
+    <string name="app_name">美享生活</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">登录</string>
+    <!-- 文字说明定义   -->
+
+    <string name="home">首页</string>
+
+    <string name="calendar">日程</string>
+
+    <string name="moments">社区</string>
+
+    <string name="my">我的</string>
+    <string name="input_digits">qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM0123456789.</string>
+
+    <string name="account_safety">账户安全</string>
+    <string name="login_pass">登录密码</string>
+    <string name="pay_pass">支付密码</string>
+    <string name="bind_phone">绑定手机</string>
+    <string name="verification_phone">验证手机</string>
+    <string name="certification">实名认证</string>
+    <string name="exit_login">退出登录</string>
+    <string name="can_receive_sms">原手机号能接受短信</string>
+    <string name="cannot_receive_sms">原手机号不能接受短信</string>
+    <string name="affirm">确认</string>
+    <string name="affirm_bind">确认绑定</string>
+    <string name="bind_new_phone">请输入要绑定的新手机号码</string>
+
+    <!-- 地址文本管理-->
+    <string name="set_default">设为默认</string>
+    <string name="address_manage">地址管理</string>
+    <string name="add">新增</string>
+    <string name="redact">编辑</string>
+    <string name="delete">删除</string>
+    <string name="add_address">新增地址</string>
+    <string name="redact_address">编辑地址</string>
+    <string name="save">保存</string>
+    <string name="consignee">收货人</string>
+    <string name="contact_phone">联系电话</string>
+    <string name="district">所在地区</string>
+    <string name="detail_address">详细地址</string>
+    <string name="postalcode">邮政编码</string>
+    <string name="hint_consignee">收货人姓名</string>
+    <string name="hint_contact_phone">收货人联系方式</string>
+    <string name="hint_district">所在城市、地区</string>
+    <string name="hint_detail_address">街道、楼牌号</string>
+    <string name="hint_postalcode">收货地邮编</string>
+
+
+    <!-- 标题 -->
+    <string name="title_left_img_desc">标题左侧图标</string>
+    <string name="title_right_img_desc">标题右侧图标</string>
+
+    <!--登录注册文本-->
+    <string name="chang_name">&amp;</string>
+    <string name="login_input_phonemail">手机号</string>
+    <string name="login_input_phone">请输入您的手机号</string>
+    <string name="login_input_pwd">美享生活账户密码</string>
+    <string name="login_name">登录</string>
+    <string name="login_forget_pwd">忘记密码?</string>
+    <string name="change_login_pwd">切换到密码登录</string>
+    <string name="login_reg_account">注册账户</string>
+    <string name="register">注册</string>
+    <string name="register_input_phone">手机号</string>
+    <string name="register_input_pwd">请输入密码</string>
+    <string name="register_input_code">请输入验证码</string>
+    <string name="verificatione">验证</string>
+    <string name="register_succeed">注册成功</string>
+    <string name="text_register_succeed">恭喜你，注册成功！</string>
+    <string name="dialog_register_succeed">恭喜你，注册成功！\n是否要实名认证？</string>
+    <string name="dialog_register_no">跳过</string>
+    <string name="dialog_register_yes">马上认证</string>
+    <string name="select">选择会员店铺</string>
+    <string name="select_store">选择要逛的店铺，退出登录后可重新选择</string>
+    <string name="select_shanghai">唯美度美容连锁-上海1店</string>
+    <string name="bronze_medal">铜牌会员</string>
+    <string name="select_baijing">唯美度美容连锁-北京店</string>
+    <string name="sielvr_medal">银牌会员</string>
+    <string name="select_shanghai2">唯美度美容连锁-上海2店</string>
+    <string name="gold_medal">金牌会员</string>
+    <!--修改登录-->
+    <string name="change_password">修改登录密码</string>
+    <string name="change_old_password_name">原密码</string>
+    <string name="change_new_password_name">新密码</string>
+    <string name="change_old_password">输入原登录密码</string>
+    <string name="change_new_password">输入新登录密码</string>
+    <string name="change_affirm_password">确认新登录密码</string>
+    <string name="change_introduce">密码由6-16个英文字母/数字/符号组成。</string>
+    <string name="change_update_acknowledge">确认修改</string>
+    <string name="change_affirm_new_password">确认密码</string>
+    <string name="pushmsg_center_no_more_msg">已经到底啦</string>
+    <string name="pushmsg_center_pull_up_text">松开加载更多</string>
+    <string name="pushmsg_center_pull_down_text">下拉刷新</string>
+    <string name="pushmsg_center_pull_release_text">松开获取更多</string>
+    <string name="pushmsg_center_pull_down_update_time">最后更新时间 : </string>
+    <string name="pushmsg_center_load_more_ongoing_text">正在加载中...</string>
+    <string name="xsearch_loading">正在加载中…</string>
+
+    <!-- 加载图片失败时的提示文本 -->
+    <string name="picture_load_image_failed">点击屏幕，重新加载</string>
+    <!-- 加载中提示 -->
+    <string name="picture_image_loading">正在加载…</string>
+
+    <!-- 下拉刷新和上拉加载更多的文本 -->
+    <string name="pull_to_refresh_header_hint_normal">@string/pushmsg_center_pull_down_text</string>
+    <string name="pull_to_refresh_header_hint_normal2">上拉加载</string>
+    <string name="pull_to_refresh_header_hint_ready">松开刷新</string>
+    <string name="pull_to_refresh_header_hint_loading">@string/pushmsg_center_load_more_ongoing_text</string>
+    <string name="pull_to_refresh_header_last_time">@string/pushmsg_center_pull_down_update_time</string>
+    <string name="pull_to_refresh_footer_hint_ready">松开载入更多</string>
+    <string name="pull_to_refresh_refreshing_label">@string/pull_to_refresh_header_hint_loading</string>
+    <string name="pull_to_refresh_no_more_data">@string/pushmsg_center_no_more_msg</string>
+    <string name="pull_to_refresh_network_error">网络不给力，请检查网络</string>
+
+    <!--支付密码-->
+    <string name="pay_code_forget_pwd">忘记支付密码</string>
+    <string name="pay_code_change_pwd">修改支付密码</string>
+    <string name="pay_code">支付密码</string>
+    <!--登录密码-->
+    <string name="login_password">登录密码</string>
+    <string name="login_old_password">原密码修改</string>
+    <string name="login_phone_password">手机验证修改</string>
+    <!--验证支付密码手机短信-->
+    <string name="verify_phone">您再重置美享生活的支付密码,请完成手机验证</string>
+    <string name="verify_phone_input_number">输入验证码</string>
+    <string name="verify_phone_again_number">获取验证码</string>
+    <string name="verfy_phone_confirm">确认</string>
+    <string name="verfy_phone_name">验证手机</string>
+    <string name="verfy_agin_send">重新获取</string>
+    <!--验证账户登录手机号码-->
+    <string name="forget_pass">您正在找回美享生活的登录密码,请完成手机验证</string>
+    <string name="Login_verify_phone">您正在重置美享生活的登录密码,请完成手机验证</string>
+    <string name="verify_phone_num_hint">输入手机尾号%s接收到的短信验证码</string>
+
+
+    <!-- 我的  文本-->
+    <string name="my_username">Manjusaka</string>
+    <string name="my_gold_member">黃金会员</string>
+    <string name="my_member_card">会员卡</string>
+    <string name="my_beauty_card">美人卡</string>
+    <string name="my_coupon">优惠券</string>
+    <string name="my_shopping_cart">购物车</string>
+    <string name="my_collect">收藏</string>
+    <string name="my_shopping">我的购物</string>
+    <string name="my_all_shopping">查看全部购物</string>
+    <string name="my_payment">待付款</string>
+    <string name="my_take_delivery">待收货</string>
+    <string name="my_comment">待评价</string>
+    <string name="my_refund">退款/售后</string>
+    <string name="my_appointment">我的预约</string>
+    <string name="my_all_appointment">查看全部预约</string>
+    <string name="my_use">待使用</string>
+    <string name="my_wallet">我的钱包</string>
+    <string name="my_commission">美人计划</string>
+    <string name="my_account_balance">账户余额：0.00元</string>
+    <string name="my_manage_money_matters">我的理财</string>
+    <string name="my_manage_money_fund">我的基金</string>
+    <string name="my_manage_insurance">我的保险</string>
+    <string name="my_accumulative_earnings">累计收益：0.00元</string>
+    <string name="my_by_stages">我的分期</string>
+    <string name="my_points">我的积分</string>
+    <string name="my_available_credit">可用额度：0.00元</string>
+    <string name="my_community">我的社区</string>
+    <string name="my_release">发布</string>
+    <string name="my_attention">关注</string>
+    <string name="my_message_list">消息列表</string>
+
+    <!-- 会员卡-->
+    <string name="member_name">唯美度美容上海连锁店</string>
+    <string name="member_yin">银牌会员</string>
+    <string name="member_balance">可用余额</string>
+    <string name="member_integral">可用积分</string>
+    <string name="member_recharge">充值</string>
+    <string name="member_my_privilege">我的特权</string>
+    <string name="member_see_all">查看全部</string>
+    <string name="member_rebate">优惠折扣</string>
+    <string name="member_double_integral">积分翻倍</string>
+    <string name="member_beauty">免费美容</string>
+    <string name="member_bonuses">推荐奖励</string>
+    <string name="member_service">优先服务</string>
+    <string name="member_bind">你还没有绑定会员卡</string>
+    <string name="member_text">绑定唯美度会员卡后可在购物时使用会员积\n分抵扣现金，并可享受折扣优惠。</string>
+    <string name="member_bind_confirm">绑定会员卡</string>
+    <string name="member_card_number">会员卡号</string>
+    <string name="member_input_card_number">美享生活会员卡号</string>
+    <string name="member_identity_number">身份证号 :</string>
+    <string name="member_input_identity_number">输入办卡身份证号</string>
+    <string name="member_confirm_bind">确认绑定</string>
+    <string name="member_cards">卡号: </string>
+
+    <!-- 账户设置文本-->
+    <string name="account_setting">设置</string>
+    <string name="account_feedback">意见反馈</string>
+    <string name="feedback">意见反馈</string>
+    <string name="account_feedback_text">感谢您的宝贵建议</string>
+    <string name="account_feedback_submit">提交</string>
+    <string name="account_grade">给美享生活评分</string>
+    <string name="account_version_number">版本号</string>
+    <string name="account_cache">清理本地缓存</string>
+    <!-- 账户管理文本-->
+    <string name="account_manage">账户管理  ></string>
+    <string name="account_manage_title">账户管理</string>
+    <string name="account_manage_head_portrait">头像</string>
+    <string name="account_manage_name">昵称</string>
+    <string name="account_manage_sex">性别</string>
+    <string name="account_manage_age">年龄</string>
+    <string name="account_manage_address">地址管理</string>
+    <string name="account_manage_safety">账户安全</string>
+    <string name="account_manage_login">登录</string>
+    <string name="account_manage_login_out">退出登录</string>
+    <string name="account_manage_hint_name">Manjusaka</string>
+    <string name="account_manage_hint_sex">保密</string>
+    <string name="account_manage_hint_address">暂无</string>
+    <string name="account_manage_hint_age">24岁</string>
+    <string name="account_manage_hint_safety">可修改密码</string>
+    <string name="account_bank_card">银行卡管理</string>
+    <string name="account_manage_no_sd_card">没有SD卡</string>
+    <!-- 编辑昵称文本-->
+    <string name="edit_nick_name_title">编辑昵称</string>
+    <string name="edit_nick_name_hint">请输入昵称</string>
+    <string name="edit_nick_name_hint_text">2-20个字符组成，可由中英文、数字组成。</string>
+    <string name="edit_nick_name_affirm">确认</string>
+    <!--修改支付密码  设置新的支付密码-->
+    <string name="change_pay_off_password">修改支付密码</string>
+    <string name="pay_off_set_new_password">设置新支付密码</string>
+    <string name="repeatpay_new_password_pay_off">重复输入新密码</string>
+    <string name="verify_old_pay_off_password">验证原支付密码</string>
+    <string name="verify_pay_off_password">为保障账户安全需验证支付密码</string>
+
+    <!--首页 -->
+    <string name="home_train">美容培训</string>
+    <string name="home_staging">美分期</string>
+    <!--美服务 -->
+    <string name="service_text_appointment">预约</string>
+    <string name="service_text_beauty_clinic">医美</string>
+    <string name="service_text_medical_tour">医旅</string>
+    <string name="service_text_gene">基因检测</string>
+    <string name="service_detail_check">查看美容评价</string>
+    <string name="service_detail_product">项目产品</string>
+    <string name="service_detail_explain">项目说明</string>
+    <string name="service_detail_reservation">预约服务</string>
+    <string name="service_imaget_text">图文信息</string>
+
+    <string name="service_beauty_clinic_information">商家信息</string>
+    <string name="service_beauty_clinic_introduce">项目介绍</string>
+    <string name="service_beauty_clinic_buy_service">购买服务</string>
+    <string name="service_selection_time">确认</string>
+    <string name="service_beauty_introduce">项目简介</string>
+    <string name="service_beauty_fit_crowd">适宜人群</string>
+    <string name="service_beauty_opration_method">手术方法</string>
+    <string name="service_beauty_real_case">真人案例</string>
+    <string name="service_beauty_our_advantage">我们的优势</string>
+    <!-- 美金融-->
+    <string name="financial_text_interest">本息保障</string>
+    <string name="financial_text_investment">分散投资</string>
+    <string name="financial_text_money">不限金额</string>
+    <string name="financial_text_more">查看更多</string>
+    <string name="financial_portion_alert">每日13点、21点增加可购份额</string>
+    <string name="financial_text_investment_earnings">投资收益</string>
+    <string name="financial_text_time1">一月</string>
+    <string name="confirm_investment_text_earnings">年华收益率:</string>
+    <string name="confirm_investment_text_limit">产品期限:</string>
+    <string name="confirm_investment_text_remaining">本期剩余可投:</string>
+    <string name="confirm_investment_text_confirm">确认投资</string>
+    <string name="prospective_earnings">预期收益: ￥0</string>
+    <string name="service_text_tab_one">项目</string>
+    <string name="service_text_tab_two">美容师</string>
+
+    <!--商城-->
+    <string name="express">快递:%s</string>
+    <string name="sell_num">已售:%s件</string>
+    <string name="send_address">发货:%s</string>
+    <string name="save_money">立省￥%s</string>
+    <string name="privilege_price">优惠价:￥%s</string>
+    <string name="already_save_price">(已优惠￥%s)</string>
+    <string name="stock_num">(库存:%s件)</string>
+    <string name="have_goods_num">有%s件商品</string>
+    <string name="price_select_num">%s的选择</string>
+    <string name="parameter_str">%s：</string>
+    <string name="space_str">&#160;&#160;&#160;&#160;</string>
+    <string name="order_amount">订单金额￥%s</string>
+    <string name="total_amount">总金额￥%s</string>
+    <string name="handling_charge">(+手续费%s元)</string>
+    <string name="stage_type">￥%1$sx%2$期</string>
+    <string name="handling_charge_hint">手续费￥%s/期</string>
+    <string name="goods_send_to">送至：%s</string>
+    <string name="integral">可用%1$s美积分抵￥%2$s</string>
+    <string name="total_goods_num">共%s件</string>
+    <string name="coupon_str">￥%s</string>
+    <string name="total_goods_num_hint">%s件商品</string>
+    <string name="total_order_amount">合计：%s</string>
+    <string name="goods_buy_num">x&#160;%s</string>
+    <string name="goods_transport">%1$s&#160;%2$s元</string>
+    <string name="list_goods_transport">%1$s%2$s元</string>
+    <string name="total_goods_num_settle_select">共%s件，合计：</string>
+
+    <!--美保险 -->
+    <string name="insurance_title">美保险</string>
+    <string name="insurance_details">保险详情</string>
+    <string name="policy_details">保单详情</string>
+    <string name="insurance_history">历史保单</string>
+    <!-- 保险详情-->
+    <string name="insurance_details_take_effect_date">生效日期</string>
+    <string name="insurance_details_safeguard_time">保障时间</string>
+    <string name="insurance_details_safeguard_amount">保障额度</string>
+    <string name="insurance_details_pay_money">支付金额</string>
+    <string name="insurance_clause">《保险条款》</string>
+    <string name="insurance_inform">《重要告知》</string>
+    <string name="insurance_clause_inform">《保险条款和重要告知》</string>
+    <string name="insurance_explain">并接受包括有关责任及免除责任条款、承保地域限制等约定。</string>
+
+    <!-- 保单详情-->
+    <string name="policy_start_date">保障开始时间</string>
+    <string name="policy_end_date">保障结束时间</string>
+    <string name="policy_provide_guaranteed">提供保障</string>
+    <string name="policy_provide_money">保障金额</string>
+    <string name="policy_number">可赔次数</string>
+    <string name="policy_service_hotline">服务热线</string>
+
+    <!-- 申请理赔 -->
+    <string name="claimes_title">申请理赔</string>
+    <string name="apply_for_claimes_step">如有需要，请按以下步骤申请理赔</string>
+    <string name="apply_for_claimes_step_first">一、拨打唯一服务热线95188</string>
+    <string name="apply_for_claimes_step_first_details">美享生活客服会为您提供一对一的人工服务，协助您完成保险理赔。</string>
+    <string name="apply_for_claimes_step_second">二、提交理赔材料</string>
+    <string name="apply_for_claimes_step_second_details">您在客服人员的指示下根据实际情况提交保险理赔所需的申请材料。</string>
+    <string name="apply_for_claimes_step_three">三、理赔成功</string>
+    <string name="apply_for_claimes_step_three_details">您在客服人员的指示下根据实际情况提交保险理赔所需的申请材料。</string>
+
+    <string name="financial_text_earnings">年华收益</string>
+    <string name="percent">%</string>
+    <string name="confirm_investment_input">请输入投资金额</string>
+    <string name="please_input_payment_password">请输入支付密码</string>
+    <string name="investment">理财投资</string>
+    <string name="forget_payment_password">忘记交易密码?</string>
+    <string name="investment_success">投资成功</string>
+    <string name="investment_enter_money">出账金额</string>
+    <string name="investment_time">投资时间</string>
+    <string name="transaction_number">交易单号</string>
+    <string name="investment_horizon">投资期限</string>
+    <string name="prospective_earnings_for_success">预期收益</string>
+    <string name="default_none">无</string>
+    <string name="title_activity_add">Add</string>
+    <string name="title_activity_add_memo">AddMemoActivity</string>
+
+
+    <string name="add_memo_title">标题</string>
+
+
+    <!-- 社区 -->
+    <string name="post_detail">帖子详情</string>
+    <string name="content_editing">内容编写</string>
+    <string name="comment_details">评论详情</string>
+    <string name="report">举报</string>
+    <string name="moments_user_name">斯米马赛</string>
+    <string name="moments_attention">关注</string>
+    <string name="moments_has_attention">已关注</string>
+    <string name="moments_content">这四种方法不伤身体又不用长期坚持的减肥方法，也许很适合你哦。</string>
+    <string name="moments_check_details">查看详情></string>
+    <string name="like_add">+1</string>
+    <string name="moments_time">2小时前</string>
+    <string name="moments_message_number">225</string>
+    <string name="moments_content_editing_hint">输入要发表的文字...</string>
+    <!--社区内容编辑文字限度数量 -->
+    <string name="moments_content_text_number">0/300</string>
+    <!--社区内容编辑图片限度数量 -->
+    <string name="moments_content_image_number">0/8</string>
+    <string name="moments_post_details_reply">回复</string>
+    <!-- 回复日期 -->
+    <string name="moments_post_details_reply_data">今天</string>
+    <!--回复时间-->
+    <string name="moments_post_details_reply_time">10:15</string>
+    <!--回复内容-->
+    <string name="moments_post_details_reply_content">看起来不错真能减肥吗？</string>
+    <!--消息内容-->
+    <string name="moments_community_news_content">看起来不错真能减肥吗？</string>
+    <!--点赞数量-->
+    <string name="moments_post_details_number">24</string>
+    <string name="oments_attention">关注</string>
+    <string name="moments_leave_message">我有句话要说...</string>
+    <string name="checkout_more_comment">查看更多评论</string>
+    <string name="message_send_btn">发送</string>
+    <string name="photo_text">相册</string>
+    <string name="moment_publish">发布</string>
+    <!--举报方式 -->
+    <string name="moments_accusation_style_garbage_marketing">垃圾营销</string>
+    <string name="moments_accusation_style_harmful_information">有害信息</string>
+    <string name="moments_accusation_style_obscenity_information">淫秽信息</string>
+    <string name="moments_accusation_style_false_information">不实信息</string>
+    <string name="moments_accusation_style_illegal_information">违法信息</string>
+    <string name="moments_accusation_style_other">其他</string>
+
+
+    <!--美分期 -->
+    <string name="staging_promote">去提升</string>
+    <string name="staging_repayment">我要还款</string>
+    <string name="staging_detail">明细</string>
+    <string name="this_month_return">本月待还</string>
+    <string name="default_money">0.00</string>
+    <string name="next_month_return">下月待还</string>
+    <string name="staging_order">美分期订单</string>
+    <string name="staging_history_check">历史账单</string>
+    <string name="staging_binding_info_alert">美享生活会誓死捍卫您的信息安全!</string>
+    <string name="staging_credit_center">征信中心</string>
+    <string name="staging_account">账户</string>
+    <string name="staging_password">密码</string>
+    <string name="submit">提交</string>
+    <string name="staging_hint_account">已注册账户名</string>
+    <string name="staging_hint_password">登录密码</string>
+    <string name="staging_binding_declare">我申明以上内容为本人真实有效信息</string>
+    <string name="staging_binding_success">已绑定成功</string>
+    <string name="staging_binding_time">消息绑定时间： 2015.01.01</string>
+    <string name="check_total_money">账单总额</string>
+    <string name="check_repay_money">已还金额</string>
+    <string name="account_detail">账户明细</string>
+    <string name="repayment">还款</string>
+    <string name="repayment_money">还款金额</string>
+    <string name="repayment_confirm">确认还款</string>
+    <string name="repayment_success">还款成功</string>
+    <string name="staging_details">分期明细</string>
+    <string name="staging_shopping_name">商品名称</string>
+    <string name="staging_payment_method">付款方式</string>
+    <string name="staging_order_money">订单金额</string>
+    <string name="staging_deal_time">交易时间</string>
+
+    <!--日程文本-->
+    <string name="add_memorandum">添加备忘</string>
+    <string name="memorandum_confirm">确认</string>
+    <string name="memorandum_title">标题</string>
+    <string name="memorandum_title_hint">简单描述要做的事...</string>
+    <string name="memorandum_time">提醒时间</string>
+    <string name="settle_repayment_money">应还金额</string>
+    <string name="settle_commission">手续费</string>
+    <string name="settle_advance">提前结清</string>
+    <string name="settle_detail_alert">提前结清后，本期往后的期数将不再计算利息</string>
+
+    <!--我的理财 -->
+    <string name="money_management_total_money">理财总额(元)</string>
+    <string name="money_management_investment_money">投资金额</string>
+    <string name="money_management_yield">收益率</string>
+    <string name="money_management_month">个月</string>
+    <string name="statistics_money_management_total_money">累计投资金额(元)</string>
+    <string name="statistics_due_money">待收金额</string>
+    <string name="statistics_due_principal">待收本金</string>
+    <string name="statistics_due_interest">待收利息</string>
+    <string name="default_money_unit">(元)</string>
+    <string name="statistics_income_money">已收金额</string>
+    <string name="money_management_investment_money1">投资金额(元)</string>
+    <string name="money_management_earnings">预期收益(元)</string>
+    <string name="money_management_terminal_yield">约定年华收益率</string>
+    <string name="money_management_limit">投资期限</string>
+    <string name="money_management_type">类型</string>
+    <string name="money_management_repayment">还款方式</string>
+    <string name="money_management_product">产品介绍</string>
+
+    <!--我的钱包-->
+    <string name="my_purse">我的钱包</string>
+    <string name="my_purse_account_balance">账户余额(元)</string>
+    <string name="my_purse_income_detail">余额收支明细</string>recharge
+    <string name="my_purse_balance_recharge">余额充值</string>
+    <string name="my_purse_withdrawal_card">提现到银行卡</string>
+    <string name="my_purse_income_detail_surface">收支明细</string>
+    <string name="my_purse_income_specifics">收支详情</string>
+    <string name="my_purse_withdraw">提现</string>
+    <string name="my_purse_apply_for_withdrawal">申请提现</string>
+    <string name="my_purse_apply_for_withdrawal_succeed">申请提现成功</string>
+    <!--我的积分-->
+    <string name="my_tv_proint">可用积分(分)</string>
+    <string name="my_tv_proint_detail">积分明细</string>
+    <string name="my_tv_proint_rule">积分规则</string>
+    <!--收支详情-->
+    <string name="icome_details_entry_money">入账金额</string>
+    <string name="icome_details_type">类型</string>
+    <string name="icome_details_time">时间</string>
+    <string name="income_details_account_balance">账户余额</string>
+    <string name="income_details_transaction_number">交易单号</string>
+    <string name="sac_longchamp_taille">预计到账时间</string>
+    <!--我的佣金-->
+    <string name="tv_accumulated_income">累计收益(元)</string>
+    <string name="tv_settle_accounts">待结算美享金</string>
+    <!--提现-->
+    <string name="withdraw_money">提现金额</string>
+    <!--充值-->
+    <string name="recharges">充值</string>
+    <string name="recharge_money">充值金额</string>
+    <string name="input_recharge_money">请输入充值金额</string>
+    <string name="recharge_succeed">充值成功</string>
+    <!--绑定银行卡-->
+    <string name="confirm_bank_card">确定绑定</string>
+    <!--订单 -->
+    <string name="order_disbursements">实付款：</string>
+    <string name="check_logistics">查看物流</string>
+    <string name="default_check_receipt">确认收货</string>
+    <string name="order_total_money">订单总价：</string>
+    <string name="order_coupon">优惠券：</string>
+    <string name="order_discount">积分抵扣：</string>
+    <string name="order_carriage">运费：</string>
+    <string name="order_confirm_time">下单时间：无</string>
+    <string name="order_payment_time">付款时间：无</string>
+    <string name="order_delete">删除订单</string>
+    <string name="order_after_sale">退换售后</string>
+    <string name="order_service_type">服务类型</string>
+    <string name="order_alert_symbol">*</string>
+    <string name="order_refund">我要退款</string>
+    <string name="order_sales_return">我要退货</string>
+    <string name="order_refund_reason">退款原因</string>
+    <string name="order_select_reason">选择退款原因</string>
+    <string name="order_refund_money">退款金额</string>
+    <string name="order_input_return_money">请输入退款金额</string>
+    <string name="order_sale_problem_details">问题描述</string>
+    <string name="order_sale_hint_problem_details">请您在此描述问题详情</string>
+    <string name="order_photo_printing">晒图</string>
+    <string name="order_not_refund">(无需退货)</string>
+    <string name="order_receiving">已收到货</string>
+    <string name="order_not_received">未收到货</string>
+    <string name="order_receiving_status">收货状态</string>
+    <string name="order_input_return_reason">选择退款原因</string>
+    <string name="order_commit">提交申请</string>
+    <string name="order_commit_evaluation">提交评价</string>
+    <string name="order_sale_hint_evalution">给此商品一个评价</string>
+    <string name="order_refund_return_account">退回账户</string>
+    <string name="order_refund_apply_time">申请时间</string>
+    <string name="order_refund_account_time">到账时间</string>
+    <string name="order_refund_schedule">退款进度</string>
+    <string name="order_logistics_company_name">物流公司:</string>
+    <string name="order_logistics_company_telephone">物流服务电话:</string>
+    <string name="order_logistics_order_no">运单号:</string>
+
+    <!--预约 -->
+    <string name="appointment_look_over_ticket">查看劵码</string>
+    <string name="appointment_look_over_refund_detail">查看退款详情</string>
+    <string name="appointment_cancel_order">取消订单</string>
+    <string name="appointment_pay">去支付</string>
+    <string name="appointment_evaluate_serve">评价服务</string>
+    <string name="appointment_all_data">全部预约</string>
+    <string name="appointment_detial_text">服务详情</string>
+    <string name="appointment_detial_infotext">服务详情</string>
+    <string name="appointment_cosmetologist">美容师</string>
+    <string name="appointment_serve_password_hint">服务密码：</string>
+    <string name="appointment_serve_claimes_refund">申请退款</string>
+    <string name="appointment_serve_evaluate">去评价</string>
+    <string name="appointment_serve_evaluate_arleady">已评价</string>
+    <string name="picker_view_submit">完成</string>
+    <string name="picker_view_year">年</string>
+    <string name="picker_view_month">月</string>
+    <string name="picker_view_day">日</string>
+    <string name="picker_view_hours">时</string>
+    <string name="picker_view_minutes">分</string>
+    <string name="picker_view_seconds">秒</string>
+    <string name="appointment_serve_evaluate_first">服务态度好</string>
+    <string name="appointment_serve_evaluate_second">手艺好</string>
+    <string name="appointment_serve_evaluate_three">手法专业</string>
+    <string name="appointment_serve_evaluate_four">善沟通</string>
+    <string name="appointment_serve_stay_evaluate_title">待评价</string>
+    <string name="appointment_serve_time">服务时间</string>
+    <string name="appointment_serve_address">服务地址</string>
+    <string name="appointment_leave_message">买家留言</string>
+    <string name="appointment_leave_message_hint">请添加您的意见和建议</string>
+
+    <!--美容培训 -->
+    <string name="training_course_content">查看课程评价</string>
+    <string name="training_merchant_information">商家信息</string>
+    <string name="training_course_introduce">课程介绍</string>
+    <string name="training_join_course">参加课程</string>
+
+
+    <string name="price_str">￥%s</string>
+    <string name="net_connect_fail">网络连接失败,请确认网络是否连接</string>
+    <string name="welcome_hint">电商、美容综合服务平台</string>
+    <string name="welcome_app_name">美享生活</string>
+    <!--订单预约详情 服务密码-->
+    <string name="service_password">服务密码:</string>
+    <!--订单提交成-->
+    <string name="order_submission_succesful">订单提交成功</string>
+    <string name="order_submission_installment">美分期付款:</string>
+    <string name="order_submission_view_order">查看订单</string>
+    <string name="order_submission_back_home">返回首页</string>
+    <string name="order_submission_reminder">重要提示:美享生活不会以订单异常、系统升级为由,要求你点击任何连接进行推广操作.</string>
+    <string name="order_contact_us">联系客服</string>
+
+    <string name="send_code_hint">短信验证码已发送到您的手机,请注意查收</string>
+    <!-- 基金-->
+    <string name="fund_default_sort">默认排序</string>
+    <string name="fund_hight_to_low_sort">高到低</string>
+    <string name="fund_low_to_hight_sort">低到高</string>
+    <string name="fund_day_amount_of_increase">日涨幅</string>
+    <string name="fund_optional"> 基金名称</string>
+    <string name="fund_newest_price">单位净值</string>
+
+    <!--CID-->
+    <string name="no_clientid">null</string>
+
+
+    <!--微信api-->
+    <string name="app_tip">提示</string>
+    <!-- WXPayEntryActivity -->
+    <string name="pay_result_tip">这个界面用于显示第三方app通过微信支付的结果</string>
+    <string name="pay_result_callback_msg" formatted="false">微信支付结果：%s</string>
+
+
+
+    <string name="no_data">没有数据了</string>
+
+
+
+    <string name="Share_Sdk_Appkey">12ebc7a9ead95</string>
+
+    <string name="QQ_Appid">1105336507</string>
+
+    <string name="QQ_Appkey">PxzKU6Hp2dyVcESC</string>
+
+    <string name="Sina_Appkey">2079487759</string>
+
+    <string name="Sina_AppSecret">bbfa9a623e816dde13f731cc98d97983</string>
+
+    <string name="Wechat_Appid">wx93a3bcbd701524e3</string>
+
+    <string name="Wechat_AppSecret">1a5c7de0d136d673b585257a7d7fdfd6</string>
+
+
+    <string name="share_title">文章分享</string>
+    <string name="share_to_wechatmoment">分享到微信朋友圈</string>
+    <string name="share_to_sina">分享到新浪微博</string>
+    <string name="share_to_tencent">分享到腾讯微博</string>
+    <string name="share_to_sms">用短信分享</string>
+    <string name="share_to_qq">用qq分享</string>
+    <string name="share_to_QZone">用QZone分享</string>
+    <string name="share">分享到</string>
+
+
+
+    <!--杨德成 201609009 第三方登录-->
+    <string name="login_with_msg">用手机号码登录</string>
+    <string name="login_with_weixin">用微信登录</string>
+    <string name="login_with_sina_weibo">用新浪微博登录</string>
+    <string name="login_with_qzone">用QQ空间登录</string>
+    <string name="login_with_other_plat">其他帐号登录</string>
+    <string name="userid_found">用户信息已存在，正在跳转登录操作…</string>
+    <string name="logining">使用%s帐号登录中…</string>
+    <string name="auth_cancel">授权操作已取消</string>
+    <string name="auth_error">授权操作遇到错误，请阅读Logcat输出; \n 如微信登录，需要微信客户端</string>
+    <string name="auth_complete">授权成功，正在跳转登录操作…</string>
+    <string name="if_register_needed">如果您需要注册功能…</string>
+    <string name="after_auth">一般来说第三方登录时，第三方平台已经为您完成用户身份校验，您可以放心让用户登录。\n\n但如果您需要判断用户是否为新用户，可以在授权操作完成后，将用户的信息通过字段“HashMap userInfo”携带给login方法。客户端通过“String userId”执行登录请求，如果服务端判定此userId为未注册用户，可以将userInfo发送给注册接口，获取用户在此平台上的昵称、头像等数据，然后执行注册</string>
+    <!--end杨德成 201609009 第三方登录-->
+    <!--首页添加字体-->
+    <string name="home_tv_server">美预约</string>
+    <string name="home_tv_beauty_clinic">医美医旅</string>
+    <string name="home_tv_medical_tour">医旅</string>
+    <string name="home_tv_fund_detection">基因检测</string>
+    <string name="home_tv_store">美商城</string>
+    <string name="home_tv_financial">美金融</string>
+    <string name="home_tv_insurance">美保险</string>
+    <string name="home_tv_train">美培训</string>
+    <string name="home_tv_hot">爆 款</string>
+    <string name="home_tv_hot_sall">热卖</string>
+    <string name="home_tv_integral">美积分</string>
+
+
+
+
+    <!--医美添加字体-->
+    <string name="ym_tv_eye">眼科</string>
+    <string name="ym_tv_nose">鼻科</string>
+    <string name="ym_tv_feature">脸型轮廓</string>
+    <string name="ym_tv_chest">胸部</string>
+    <string name="ym_tv_face">面部除皱</string>
+    <string name="ym_tv_lip">唇部</string>
+    <string name="ym_tv_photoelecticity">光电美容</string>
+    <string name="ym_tv_others">其他整形</string>
+
+
+
+    <!--ydc20161024 高德地图导航-->
+    <string name="app_id">输入您讯飞的appid</string>
+
+
+    <!--ydc20161108 start版本更新-->s
+    <string name="download_failed">下载失败</string>
+    <string name="download_success">下载成功，点击安装</string>
+    <string name="start_download_variable">开始下载%1$s</string>
+    <string name="downloading_variable">正在下载%1$s</string>
+    <!--ydc20161108 end版本更新-->
+
+    <!--ydc20161121 start播放器-->
+    <string name="network_is_unable">网络连接不可用</string>
+    <!--优惠卷-->
+    <string name="not_to_use2">暂不使用</string>
+
+
+    <string name="xieyi"><u>&lt;&lt;开户协议&gt;&gt;</u></string>
+    <string name="xieyi2"><u>&lt;&lt;投资人权益须知&gt;&gt;</u></string>
+    <string name="xieyi3"><u>&lt;&lt;移动客户端基金交易三方协议&gt;&gt;</u></string>
+
+    <!--测试风评文字-->
+    <string name="risk_test_contents">测一测您属于哪种风险类型</string>
+    <string name="risk_test_introduce">点击"不用测了",我们将默许您做过风险测试,如果您没有做过风险测试,建议进行风险测评</string>
+    <string name="risk_hint">不用测了,我就是保守型用户</string>
+    <string name="risk_hint_contents">正确评估您的风险承受能力水平是明确您投资目标和可投资资产的前提。在您进行基金投资前，请如实填写此问卷。根据测试结果，您可以比较客观地了解您的风险承受能力，从而协助您选择适合您的基金投资计划</string>
+    <!--美商城文字-->
+    <string name="msc_hot_brand">热门品牌</string>
+    <string name="msc_marketing">美妆人气推荐</string>
+    <string name="home_tv_xianshigou">限时购</string>
+    <string name="home_tv_pingtong">拼团购</string>
+    <string name="home_tv_meijifen">美积分</string>
+    <string name="home_tv_zhuanmeijin">赚美金</string>
+    <!--更美文字-->
+    <string name="gm_spell_group_text">拼团更美丽</string>
+    <string name="gm_community_post">社区帖子精选</string>
+    <!--美积分文字-->
+    <string name="integral_no_sigin_in">签到</string>
+    <string name="integral_yes_sigin_in">已签到</string>
+    <!--韩国馆-->
+    <string name="south_korean_boutique">精品推荐</string>
+    <!--分享赚钱-->
+    <string name="make_moenys">开启我的赚钱之道</string>
+    <!--规则-->
+    <string name="gui_zhe">规则</string>
+</resources>
