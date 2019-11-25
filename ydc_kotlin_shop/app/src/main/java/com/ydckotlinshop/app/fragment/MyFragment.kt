@@ -4,7 +4,7 @@ import com.ydckotlinshop.app.R
 import com.ydckotlinshop.app.account.bean.TokenBean
 import com.ydckotlinshop.app.contract.LoginContract
 import com.ydckotlinshop.app.presenter.LoginPresenter
-import mvp.ljb.kt.fragment.BaseMvpFragment
+import com.ydc.mvp.fragment.BaseMvpFragment
 
 class MyFragment : BaseMvpFragment<LoginContract.IPresenter>(), LoginContract.IView{
 

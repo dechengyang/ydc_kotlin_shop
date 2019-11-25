@@ -1,2 +1,2 @@
-include ':app', ':ydcstaticresource'
+include ':app', ':ydcstaticresource', ':ydcmvp'
 rootProject.name='ydc_kotlin_shop'

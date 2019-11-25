@@ -7,8 +7,8 @@ import com.ydckotlinshop.app.contract.LoginContract
 import com.zhenggzh.dream.retrofitandrxjavademo.netutils.RetrofitFactory
 import io.reactivex.Observable
 import io.reactivex.observers.DisposableObserver
-import mvp.ljb.kt.model.BaseModel
-import mvp.ljb.kt.presenter.getContextEx
+import com.ydc.mvp.model.BaseModel
+import com.ydc.mvp.presenter.getContextEx
 import okhttp3.ResponseBody
 
 /**

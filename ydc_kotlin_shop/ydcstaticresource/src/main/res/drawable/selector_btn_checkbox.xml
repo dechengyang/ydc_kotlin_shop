@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <!--单选按钮-->
-    <item android:drawable="@mipmap/checked_icon" android:state_checked="true"/>
-    <item android:drawable="@mipmap/unchecked_icon"/>
+    <item android:drawable="@mipmap/ic_shopping_car_check" android:state_checked="true"/>
+    <item android:drawable="@mipmap/ic_shopping_car_uncheck"/>
 </selector>

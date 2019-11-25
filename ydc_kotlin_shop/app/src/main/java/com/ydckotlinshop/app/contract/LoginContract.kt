@@ -7,9 +7,9 @@ import com.ydckotlinshop.app.bean.CommonBean
 import com.ydckotlinshop.app.bean.Feed
 import io.reactivex.Observable
 import io.reactivex.observers.DisposableObserver
-import mvp.ljb.kt.contract.IPresenterContract
-import mvp.ljb.kt.contract.IViewContract
-import mvp.ljb.kt.contract.IModelContract
+import com.ydc.mvp.contract.IPresenterContract
+import com.ydc.mvp.contract.IViewContract
+import com.ydc.mvp.contract.IModelContract
 import okhttp3.ResponseBody
 
 /**

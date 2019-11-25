@@ -33,8 +33,10 @@ dependencies {
     androidTestImplementation 'androidx.test:runner:1.2.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 
+    implementation 'com.android.support:design:23.4.0'
 
     implementation project(':ydcstaticresource')
+    implementation project(':ydcmvp')
     //导入RxJava 和 RxAndroid
     implementation 'io.reactivex.rxjava2:rxandroid:2.0.2'
     implementation 'io.reactivex.rxjava2:rxjava:2.x.y'
@@ -47,7 +49,6 @@ dependencies {
     implementation 'com.squareup.okhttp3:logging-interceptor:3.8.1'
     //开源日志库
     implementation 'com.orhanobut:logger:1.15'
-    //Kotlin MVP 插件
-    implementation 'com.github.cn-ljb:kotlin-mvp-lib:1.2.0'
+
     implementation files('libs/MaterialDesign.jar')
 }

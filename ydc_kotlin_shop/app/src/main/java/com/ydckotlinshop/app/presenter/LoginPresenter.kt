@@ -1,6 +1,6 @@
 package com.ydckotlinshop.app.presenter
 
-import mvp.ljb.kt.presenter.BaseMvpPresenter
+import com.ydc.mvp.presenter.BaseMvpPresenter
 import com.example.kotlinfirst.network.GitHubSubscribe
 import com.example.kotlinfirst.network.OnSuccessAndFaultListener
 import com.example.kotlinfirst.network.OnSuccessAndFaultSub
@@ -16,7 +16,7 @@ import com.ydckotlinshop.app.model.LoginModel
 import io.reactivex.Observable
 import io.reactivex.Observer
 import io.reactivex.functions.Consumer
-import mvp.ljb.kt.presenter.getContextEx
+import com.ydc.mvp.presenter.getContextEx
 import java.util.*
 
 /**

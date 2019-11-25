@@ -1,11 +1,867 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:text="我的模块正在建设中..."></TextView>
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    android:background="@color/global_background">
 
-</LinearLayout>
+
+    <ScrollView
+        android:id="@+id/swipe_target"
+        style="@style/MatchMatch">
+
+        <LinearLayout
+            android:id="@+id/ll_group"
+            style="@style/MatchMatch"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                style="@style/MatchWrap"
+                android:background="@mipmap/bg">
+
+                <TextView
+                    android:id="@+id/tv_login"
+                    style="@style/WrapWrap"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@mipmap/loginbg"
+                    android:gravity="center"
+                    android:text="@string/login_name"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size_18_sp"/>
+
+                <ImageView
+                    android:id="@+id/tv_remind"
+                    style="@style/WrapWrap"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/divide_20_dp"
+                    android:layout_marginTop="@dimen/divide_10_dp"
+                    android:src="@mipmap/messages2"/>
+
+                <ImageView
+                    android:id="@+id/iv_notification_icon"
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/divide_28_dp"
+                    android:layout_marginTop="@dimen/divide_10_dp"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/tv_setting"
+                    style="@style/WrapWrap"
+                    android:layout_alignTop="@+id/tv_remind"
+                    android:layout_marginRight="@dimen/divide_20_dp"
+                    android:layout_toLeftOf="@+id/tv_remind"
+                    android:layout_toStartOf="@+id/tv_remind"
+                    android:src="@mipmap/setting"/>
+
+                <ImageView
+                    android:id="@+id/iv_portrait"
+                    android:layout_width="@dimen/divide_80_dp"
+                    android:layout_height="@dimen/divide_80_dp"
+                    android:layout_marginLeft="@dimen/divide_20_dp"
+                    android:layout_marginTop="@dimen/divide_60_dp"
+                    android:src="@mipmap/default_head_portrait"/>
+
+                <TextView
+                    android:id="@+id/tv_username"
+                    style="@style/MatchWrap"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/iv_portrait"
+                    android:layout_marginLeft="@dimen/divide_15_dp"
+                    android:layout_marginTop="@dimen/divide_10_dp"
+                    android:layout_toEndOf="@+id/iv_portrait"
+                    android:layout_toRightOf="@+id/iv_portrait"
+                    android:gravity="center|left"
+                    android:text="无"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/divide_16_dp"/>
+
+                <TextView
+                    android:id="@+id/tv_gold_member"
+                    android:layout_width="@dimen/divide_90_dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/tv_username"
+                    android:layout_alignStart="@+id/tv_username"
+                    android:layout_below="@+id/tv_username"
+                    android:layout_marginTop="@dimen/divide_5_dp"
+                    android:background="@mipmap/levelbg"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/divide_3_dp"
+                    android:paddingLeft="@dimen/divide_10_dp"
+                    android:paddingRight="@dimen/divide_10_dp"
+                    android:paddingTop="@dimen/divide_3_dp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/divide_12_dp"/>
+                <TextView
+                    android:id="@+id/tv_account_manager"
+                    style="@style/WrapWrap"
+                    android:gravity="center"
+                    android:text="@string/account_manage"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/divide_14_dp"
+                    android:layout_alignBaseline="@+id/tv_username"
+                    android:layout_alignBottom="@+id/tv_username"
+                    android:layout_alignRight="@+id/tv_remind"
+                    android:layout_alignEnd="@+id/tv_remind"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_headmemu"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <yicheng.android.ui.materialdesignlibrary.views.LayoutRipple
+                    android:id="@+id/my_member_card"
+                    app:rippleColor="#0c000000"
+                    style="@style/AutoMatch">
+                    <ImageView
+                        android:id="@+id/iv_vip"
+                        android:layout_marginTop="@dimen/divide_6_dp"
+                        style="@style/WrapWrap"
+                        android:layout_centerHorizontal="true"
+                        android:src="@mipmap/vip"
+                        />
+                    <TextView
+                        style="@style/WrapWrap"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/my_beauty_card"
+                        android:layout_below="@id/iv_vip"
+                        android:textSize="@dimen/size_13_sp"
+                        android:layout_marginTop="@dimen/divide_4_dp"
+                        android:textColor="@color/black_3"/>
+                    <!--android:drawableTop="@mipmap/vip"-->
+
+                </yicheng.android.ui.materialdesignlibrary.views.LayoutRipple>
+
+                <yicheng.android.ui.materialdesignlibrary.views.LayoutRipple
+                    android:id="@+id/my_coupon"
+                    app:rippleColor="#0c000000"
+                    style="@style/AutoMatch">
+                    <ImageView
+                        android:id="@+id/iv_coupon"
+                        android:layout_marginTop="@dimen/divide_6_dp"
+                        style="@style/WrapWrap"
+                        android:layout_centerHorizontal="true"
+                        android:src="@mipmap/coupon"
+                        />
+                    <TextView
+                        android:id="@+id/tv_my_coupon"
+                        style="@style/WrapWrap"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/divide_4_dp"
+                        android:layout_below="@+id/iv_coupon"
+                        android:text="@string/my_coupon"
+                        android:textSize="@dimen/size_13_sp"
+                        android:textColor="@color/black_3"/>
+                </yicheng.android.ui.materialdesignlibrary.views.LayoutRipple>
+
+                <yicheng.android.ui.materialdesignlibrary.views.LayoutRipple
+                    android:id="@+id/my_shopping_cart"
+                    app:rippleColor="#0c000000"
+                    style="@style/AutoMatch">
+                    <ImageView
+                        android:id="@+id/iv_shopping_cart"
+                        android:layout_marginTop="@dimen/divide_6_dp"
+                        style="@style/WrapWrap"
+                        android:layout_centerHorizontal="true"
+                        android:src="@mipmap/shopping_cart"
+                        />
+                    <TextView
+                        android:id="@+id/tv_my_shopping"
+                        style="@style/WrapWrap"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/divide_4_dp"
+                        android:layout_below="@+id/iv_shopping_cart"
+                        android:text="@string/my_shopping_cart"
+                        android:textSize="@dimen/size_13_sp"
+                        android:textColor="@color/black_3"/>
+                </yicheng.android.ui.materialdesignlibrary.views.LayoutRipple>
+
+
+                <yicheng.android.ui.materialdesignlibrary.views.LayoutRipple
+                    android:id="@+id/my_collect"
+                    app:rippleColor="#0c000000"
+                    style="@style/AutoMatch">
+                    <ImageView
+                        android:id="@+id/iv_my_collect"
+                        android:layout_marginTop="@dimen/divide_6_dp"
+                        style="@style/WrapWrap"
+                        android:layout_centerHorizontal="true"
+                        android:src="@mipmap/my_collect"
+                        />
+                    <TextView
+                        android:id="@+id/tv_my_collect"
+                        style="@style/WrapWrap"
+                        android:layout_below="@+id/iv_my_collect"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/divide_4_dp"
+                        android:text="@string/my_collect"
+                        android:textSize="@dimen/size_13_sp"
+                        android:textColor="@color/black_3"/>
+                </yicheng.android.ui.materialdesignlibrary.views.LayoutRipple>
+            </LinearLayout>
+
+            <include layout="@layout/line_view"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="@dimen/divide_10_dp"
+                android:background="@color/line_color"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_my_shopping"
+                style="@style/MatchHeight_40"
+                android:background="@color/white">
+                <TextView
+                    android:id="@+id/tv_my_all_shopping"
+                    style="@style/WrapWrap"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/divide_15_dp"
+                    android:text="@string/my_shopping"
+                    android:textColor="@color/black_3"
+                    android:textSize="@dimen/size_14_sp"/>
+
+                <TextView
+                    android:id="@+id/my_fragment_tv_check_all_shopping"
+                    style="@style/WrapWrap"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/tv_my_all_shopping"
+                    android:layout_marginRight="@dimen/divide_15_dp"
+                    android:drawablePadding="@dimen/divide_10_dp"
+                    android:drawableRight="@mipmap/enter"
+                    android:text="@string/my_all_shopping"
+                    android:textColor="@color/black_8"
+                    android:textSize="@dimen/size_12_sp"/>
+            </RelativeLayout>
+
+            <include layout="@layout/default_line_view"/>
+
+            <LinearLayout
+                android:id="@+id/ll_order"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:paddingTop="8dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <yicheng.android.ui.materialdesignlibrary.views.LayoutRipple
+                    android:id="@+id/my_payment"
+                    app:rippleColor="#0c000000"
+                    style="@style/AutoMatch">
+
+                    <RelativeLayout
+                        android:id="@+id/re_wallet"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/iv_wallet"
+                            android:layout_marginTop="@dimen/divide_6_dp"
+                            style="@style/WrapWrap"
+                            android:layout_centerHorizontal="true"
+                            android:src="@mipmap/wallet"
+                            />
+
+                        <TextView
+                            android:id="@+id/unread_walletmsg_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_toRightOf="@+id/iv_wallet"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginLeft="-12dp"
+                            android:background="@drawable/linearlayoutframe_circle"
+                            android:gravity="center"
+                            android:text="7"
+                            android:textColor="@color/magenta"
+                            android:textSize="10sp"
+                            android:visibility="gone" />
+
+                        <TextView
+                            style="@style/WrapWrap"
+                            android:layout_below="@+id/iv_wallet"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/divide_4_dp"
+                            android:text="@string/my_payment"
+                            android:textColor="@color/black_3"
+                            android:textSize="@dimen/size_12_sp"
+                            />
+                    </RelativeLayout>
+                </yicheng.android.ui.materialdesignlibrary.views.LayoutRipple>
+
+                <yicheng.android.ui.materialdesignlibrary.views.LayoutRipple
+                    android:id="@+id/my_take_delivery"
+                    app:rippleColor="#0c000000"
+                    style="@style/AutoMatch">
+
+
+                    <RelativeLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/iv_receiving"
+                            android:layout_marginTop="@dimen/divide_6_dp"
+                            style="@style/WrapWrap"
+                            android:layout_centerHorizontal="true"
+                            android:src="@mipmap/receiving"
+                            />
+
+
+                        <TextView
+                            android:id="@+id/unread_noReceiveOrde_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_toRightOf="@+id/iv_receiving"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginLeft="-12dp"
+                            android:background="@drawable/linearlayoutframe_circle"
+                            android:gravity="center"
+                            android:text="7"
+                            android:textColor="@color/magenta"
+                            android:textSize="10sp"
+                            android:visibility="gone" />
+
+                        <TextView
+                            style="@style/WrapWrap"
+                            android:layout_below="@id/iv_receiving"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/divide_4_dp"
+                            android:text="@string/my_take_delivery"
+                            android:textSize="@dimen/size_12_sp"
+                            android:textColor="@color/black_3"/>
+
+                    </RelativeLayout>
+                </yicheng.android.ui.materialdesignlibrary.views.LayoutRipple>
+
+                <yicheng.android.ui.materialdesignlibrary.views.LayoutRipple
+                    android:id="@+id/my_comment"
+                    app:rippleColor="#0c000000"
+                    style="@style/AutoMatch">
+
+                    <RelativeLayout
+                        android:id="@+id/re_evaluate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:id="@+id/iv_evaluate"
+                            android:layout_marginTop="@dimen/divide_6_dp"
+                            style="@style/WrapWrap"
+                            android:layout_centerHorizontal="true"
+                            android:src="@mipmap/evaluate"
+                            />
+
+
+                        <TextView
+                            android:id="@+id/unread_evaluatemsg_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/divide_3_dp"
+                            android:paddingRight="@dimen/divide_3_dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_toRightOf="@+id/iv_evaluate"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginLeft="-12dp"
+                            android:background="@drawable/linearlayoutframe_normal"
+                            android:gravity="center"
+                            android:text="27"
+                            android:textColor="@color/magenta"
+                            android:textSize="10sp"
+                            android:visibility="gone" />
+
+                        <TextView
+                            style="@style/WrapWrap"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/divide_4_dp"
+                            android:layout_below="@id/iv_evaluate"
+                            android:text="@string/my_comment"
+                            android:textColor="@color/black_3"
+                            android:textSize="@dimen/size_12_sp"
+                            />
+                    </RelativeLayout>
+
+
+                </yicheng.android.ui.materialdesignlibrary.views.LayoutRipple>
+
+
+                <yicheng.android.ui.materialdesignlibrary.views.LayoutRipple
+                    android:id="@+id/my_refund"
+                    app:rippleColor="#0c000000"
+                    style="@style/AutoMatch">
+
+                    <ImageView
+                        android:id="@+id/iv_aftersale"
+                        android:layout_marginTop="@dimen/divide_6_dp"
+                        style="@style/WrapWrap"
+                        android:layout_centerHorizontal="true"
+                        android:src="@mipmap/aftersale"/>
+
+                    <TextView
+
+                        style="@style/WrapWrap"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/divide_4_dp"
+                        android:layout_below="@id/iv_aftersale"
+                        android:text="@string/my_refund"
+                        android:textColor="@color/black_3"
+                        android:textSize="@dimen/size_12_sp"
+                        />
+                </yicheng.android.ui.materialdesignlibrary.views.LayoutRipple>
+            </LinearLayout>
+
+            <include layout="@layout/line_view"/>
+
+            <View
+                style="@style/MatchOne"
+                android:layout_marginTop="@dimen/divide_10_dp"
+                android:background="@color/line_color"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_my_appointment"
+                style="@style/MatchHeight_40"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/tv_my_appointment"
+                    style="@style/WrapWrap"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/divide_15_dp"
+                    android:text="@string/my_appointment"
+                    android:textColor="@color/black_3"
+                    android:textSize="@dimen/size_14_sp"/>
+
+                <TextView
+                    style="@style/WrapWrap"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/tv_my_appointment"
+                    android:layout_marginRight="@dimen/divide_15_dp"
+                    android:drawablePadding="@dimen/divide_10_dp"
+                    android:drawableRight="@mipmap/enter"
+                    android:text="@string/my_all_appointment"
+                    android:textColor="@color/black_8"
+                    android:textSize="@dimen/size_12_sp"/>
+            </RelativeLayout>
+
+            <include layout="@layout/default_line_view"/>
+
+            <LinearLayout
+                android:id="@+id/ll_subscribe"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:paddingTop="8dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <yicheng.android.ui.materialdesignlibrary.views.LayoutRipple
+                    android:id="@+id/my_appointment_payment"
+                    app:rippleColor="#0c000000"
+                    style="@style/AutoMatch">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:id="@+id/iv_payment_wallet"
+                            android:layout_marginTop="@dimen/divide_6_dp"
+                            style="@style/WrapWrap"
+                            android:layout_centerHorizontal="true"
+                            android:src="@mipmap/wallet"/>
+
+
+                        <TextView
+                            android:id="@+id/unread_yywalletmsg_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_toRightOf="@+id/iv_payment_wallet"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginLeft="-12dp"
+                            android:background="@drawable/linearlayoutframe_circle"
+                            android:gravity="center"
+
+                            android:text="7"
+                            android:textColor="@color/magenta"
+                            android:textSize="10sp"
+                            android:visibility="gone" />
+
+                        <TextView
+                            style="@style/WrapWrap"
+                            android:layout_centerHorizontal="true"
+                            android:layout_below="@id/iv_payment_wallet"
+                            android:layout_marginTop="@dimen/divide_4_dp"
+                            android:text="@string/my_payment"
+                            android:textColor="@color/black_3"
+                            android:textSize="@dimen/size_12_sp"
+                            />
+                    </RelativeLayout>
+                </yicheng.android.ui.materialdesignlibrary.views.LayoutRipple>
+
+                <yicheng.android.ui.materialdesignlibrary.views.LayoutRipple
+                    android:id="@+id/my_appointment_use"
+                    app:rippleColor="#0c000000"
+                    style="@style/AutoMatch">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:id="@+id/iv_use"
+                            android:layout_marginTop="@dimen/divide_6_dp"
+                            style="@style/WrapWrap"
+                            android:layout_centerHorizontal="true"
+                            android:src="@mipmap/use"/>
+                        <TextView
+                            android:id="@+id/unread_yyusemsg_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_toRightOf="@+id/iv_use"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginLeft="-12dp"
+                            android:background="@drawable/linearlayoutframe_circle"
+                            android:gravity="center"
+                            android:text="7"
+                            android:textColor="@color/magenta"
+                            android:textSize="10sp"
+                            android:visibility="gone" />
+
+                        <TextView
+                            style="@style/WrapWrap"
+                            android:layout_below="@id/iv_use"
+                            android:layout_marginTop="@dimen/divide_4_dp"
+                            android:layout_centerHorizontal="true"
+                            android:text="@string/my_use"
+                            android:textColor="@color/black_3"
+                            android:textSize="@dimen/size_12_sp"
+                            />
+
+                    </RelativeLayout>
+                </yicheng.android.ui.materialdesignlibrary.views.LayoutRipple>
+
+                <yicheng.android.ui.materialdesignlibrary.views.LayoutRipple
+                    android:id="@+id/my_appointment_comment"
+                    app:rippleColor="#0c000000"
+                    style="@style/AutoMatch">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/iv_appointment_evaluate"
+                            android:layout_marginTop="@dimen/divide_6_dp"
+                            style="@style/WrapWrap"
+                            android:layout_centerHorizontal="true"
+                            android:src="@mipmap/evaluate"/>
+
+                        <TextView
+                            android:id="@+id/unread_yyevaluatemsg_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/divide_3_dp"
+                            android:paddingRight="@dimen/divide_3_dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_toRightOf="@+id/iv_appointment_evaluate"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginLeft="-12dp"
+                            android:background="@drawable/linearlayoutframe_normal"
+                            android:gravity="center"
+                            android:text="27"
+                            android:textColor="@color/magenta"
+                            android:textSize="10sp"
+                            android:visibility="gone" />
+
+
+                        <TextView
+                            style="@style/WrapWrap"
+                            android:layout_below="@id/iv_appointment_evaluate"
+                            android:layout_marginTop="@dimen/divide_4_dp"
+                            android:layout_centerHorizontal="true"
+                            android:text="@string/my_comment"
+                            android:textColor="@color/black_3"
+                            android:textSize="@dimen/size_12_sp"
+                            />
+
+
+                    </RelativeLayout>
+                </yicheng.android.ui.materialdesignlibrary.views.LayoutRipple>
+
+
+                <yicheng.android.ui.materialdesignlibrary.views.LayoutRipple
+                    android:id="@+id/my_appointment_refund"
+                    app:rippleColor="#0c000000"
+                    style="@style/AutoMatch">
+                    <ImageView
+                        android:id="@+id/iv_appointment_aftersale"
+                        android:layout_marginTop="@dimen/divide_6_dp"
+                        style="@style/WrapWrap"
+                        android:layout_centerHorizontal="true"
+                        android:src="@mipmap/aftersale"/>
+
+
+                    <TextView
+                        style="@style/WrapWrap"
+                        android:layout_below="@id/iv_appointment_aftersale"
+                        android:layout_marginTop="@dimen/divide_4_dp"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/my_refund"
+                        android:textColor="@color/black_3"
+                        android:textSize="@dimen/size_12_sp"
+                        />
+                </yicheng.android.ui.materialdesignlibrary.views.LayoutRipple>
+            </LinearLayout>
+
+            <include layout="@layout/line_view"/>
+
+            <View
+                style="@style/MatchOne"
+                android:layout_marginTop="@dimen/divide_10_dp"
+                android:background="@color/line_color"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_my_wallet"
+                style="@style/MatchHeight_40"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/tv_my_wallet"
+                    style="@style/WrapWrap"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/divide_15_dp"
+                    android:text="@string/my_wallet"
+                    android:textColor="@color/black_3"
+                    android:textSize="@dimen/size_14_sp"/>
+
+                <TextView
+                    android:id="@+id/tv_my_account_balance"
+                    style="@style/MatchWrap"
+                    android:layout_alignBottom="@+id/tv_my_wallet"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="@dimen/divide_15_dp"
+                    android:drawablePadding="@dimen/divide_10_dp"
+                    android:drawableRight="@mipmap/enter"
+                    android:gravity="center_vertical|right"
+                    android:text="@string/my_account_balance"
+                    android:textColor="@color/black_8"
+                    android:textSize="@dimen/size_12_sp"
+                    />
+            </RelativeLayout>
+
+            <include layout="@layout/default_line_view"/>
+            <RelativeLayout
+                android:id="@+id/rl_my_points"
+                style="@style/MatchHeight_40"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/tv_my_points"
+                    style="@style/WrapWrap"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/divide_15_dp"
+                    android:text="@string/my_points"
+                    android:textColor="@color/black_3"
+                    android:textSize="@dimen/size_14_sp"/>
+
+                <TextView
+                    android:id="@+id/tv_my_my_points"
+                    style="@style/MatchWrap"
+                    android:layout_alignBottom="@+id/tv_my_points"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="@dimen/divide_15_dp"
+                    android:drawablePadding="@dimen/divide_10_dp"
+                    android:drawableRight="@mipmap/enter"
+                    android:gravity="center_vertical|right"
+                    android:textColor="@color/black_8"
+                    android:textSize="@dimen/size_13_sp"/>
+            </RelativeLayout>
+
+            <include layout="@layout/default_line_view"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_my_by_stages"
+                style="@style/MatchHeight_40"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/tv_my_by_stages"
+                    style="@style/WrapWrap"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/divide_15_dp"
+                    android:text="@string/my_by_stages"
+                    android:textColor="@color/black_3"
+                    android:textSize="@dimen/size_14_sp"/>
+
+                <TextView
+                    android:id="@+id/tv_my_available_redit"
+                    style="@style/MatchWrap"
+                    android:layout_alignBottom="@+id/tv_my_by_stages"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginRight="@dimen/divide_15_dp"
+                    android:drawablePadding="@dimen/divide_10_dp"
+                    android:drawableRight="@mipmap/enter"
+                    android:gravity="center_vertical|right"
+                    android:textColor="@color/black_8"
+                    android:textSize="@dimen/size_13_sp"/>
+            </RelativeLayout>
+
+            <include layout="@layout/line_view"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_hyyaoqing"
+                style="@style/MatchHeight_40"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/tv_hyyaoqing"
+                    style="@style/WrapWrap"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/divide_15_dp"
+                    android:text="好友邀请"
+                    android:textColor="@color/black_3"
+                    android:textSize="@dimen/size_14_sp"/>
+
+                <TextView
+                    style="@style/WrapWrap"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/tv_hyyaoqing"
+                    android:layout_marginRight="@dimen/divide_15_dp"
+                    android:drawablePadding="@dimen/divide_10_dp"
+                    android:drawableRight="@mipmap/enter"
+                    android:textColor="@color/black_8"
+                    android:textSize="@dimen/size_13_sp"/>
+            </RelativeLayout>
+
+
+            <include layout="@layout/line_view"/>
+
+            <View
+                style="@style/MatchOne"
+                android:layout_marginTop="@dimen/divide_10_dp"
+                android:background="@color/line_color"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_my_community"
+                style="@style/MatchHeight_40"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/my_community"
+                    style="@style/WrapWrap"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/divide_15_dp"
+                    android:text="@string/my_community"
+                    android:textColor="@color/black_3"
+                    android:textSize="@dimen/size_14_sp"/>
+
+            </RelativeLayout>
+
+            <include layout="@layout/default_line_view"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <yicheng.android.ui.materialdesignlibrary.views.LayoutRipple
+                    android:id="@+id/my_release"
+                    app:rippleColor="#0c000000"
+                    style="@style/AutoMatch">
+
+                    <RelativeLayout style="@style/MatchMatch">
+
+                        <TextView
+                            android:id="@+id/tv_my_release"
+                            style="@style/MatchMatch"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/divide_24_dp"
+                            android:text="0"
+                            android:textColor="@color/black_3"
+                            android:textSize="@dimen/size_24_sp"/>
+
+                        <TextView
+                            style="@style/MatchMatch"
+                            android:gravity="center"
+                            android:paddingTop="@dimen/divide_28_dp"
+                            android:text="@string/my_release"
+                            android:textColor="@color/black_3"
+                            android:textSize="@dimen/size_12_sp"/>
+                    </RelativeLayout>
+
+                </yicheng.android.ui.materialdesignlibrary.views.LayoutRipple>
+
+                <yicheng.android.ui.materialdesignlibrary.views.LayoutRipple
+                    android:id="@+id/my_attention"
+                    app:rippleColor="#0c000000"
+                    style="@style/AutoMatch">
+
+                    <RelativeLayout style="@style/MatchMatch">
+
+                        <TextView
+                            android:id="@+id/tv_my_attention"
+                            style="@style/MatchMatch"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/divide_24_dp"
+                            android:text="0"
+                            android:textColor="@color/black_3"
+                            android:textSize="@dimen/size_24_sp"/>
+
+                        <TextView
+                            style="@style/MatchMatch"
+                            android:gravity="center"
+                            android:paddingTop="@dimen/divide_28_dp"
+                            android:text="@string/my_attention"
+                            android:textColor="@color/black_3"
+                            android:textSize="@dimen/size_12_sp"/>
+                    </RelativeLayout>
+                </yicheng.android.ui.materialdesignlibrary.views.LayoutRipple>
+
+                <yicheng.android.ui.materialdesignlibrary.views.LayoutRipple
+                    android:id="@+id/my_message_list"
+                    app:rippleColor="#0c000000"
+                    style="@style/AutoMatch">
+
+                    <RelativeLayout style="@style/MatchMatch">
+
+                        <TextView
+                            android:id="@+id/tv_my_message_list"
+                            style="@style/MatchMatch"
+                            android:gravity="center"
+                            android:paddingBottom="@dimen/divide_24_dp"
+                            android:text="0"
+                            android:textColor="@color/black_3"
+                            android:textSize="@dimen/size_24_sp"/>
+
+                        <TextView
+                            style="@style/MatchMatch"
+                            android:gravity="center"
+                            android:paddingTop="@dimen/divide_28_dp"
+                            android:text="@string/my_message_list"
+                            android:textColor="@color/black_3"
+                            android:textSize="@dimen/size_12_sp"/>
+                    </RelativeLayout>
+                </yicheng.android.ui.materialdesignlibrary.views.LayoutRipple>
+
+            </LinearLayout>
+
+            <include layout="@layout/line_view"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

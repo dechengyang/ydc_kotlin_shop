@@ -12,7 +12,7 @@ import com.ydckotlinshop.app.contract.LoginContract
 import com.ydckotlinshop.app.main.MainActivity
 import com.ydckotlinshop.app.presenter.LoginPresenter
 import kotlinx.android.synthetic.main.activity_login.*
-import mvp.ljb.kt.act.BaseMvpActivity
+import com.ydc.mvp.activity.BaseMvpActivity
 
 class LoginActivity: BaseMvpActivity<LoginContract.IPresenter>(), LoginContract.IView{
 
