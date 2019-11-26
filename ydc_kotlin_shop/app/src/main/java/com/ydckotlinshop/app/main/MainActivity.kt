@@ -5,6 +5,8 @@ import android.os.Bundle
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
+import com.ydc.config.SharePreferenceKey
+import com.ydc.datarepository.sphelper.SharedPreferencesHelper
 import com.ydckotlinshop.app.R
 import com.ydckotlinshop.app.fragment.CategoryFragment
 import com.ydckotlinshop.app.fragment.HomeFragment
@@ -29,6 +31,9 @@ class MainActivity : AppCompatActivity() {
         fragmentManager = supportFragmentManager
         initView();
         switchTab(0)
+
+        var token= SharedPreferencesHelper.get(this,SharePreferenceKey.Object.TOKEN,"")
+        var t=token
     }
     fun  initView(){
         tab_home.setOnClickListener(){

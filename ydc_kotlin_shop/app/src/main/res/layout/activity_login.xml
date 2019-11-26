@@ -41,7 +41,7 @@
                     android:layout_height="@dimen/divide_3_dp"
                     android:layout_marginLeft="@dimen/divide_26_dp"
                     android:layout_marginTop="@dimen/divide_10_dp"
-                    android:background="#5FAD4A">
+                    android:background="@color/magenta">
 
                 </View>
             </LinearLayout>
@@ -68,7 +68,7 @@
                     android:layout_height="@dimen/divide_3_dp"
                     android:layout_marginLeft="@dimen/divide_24_dp"
                     android:layout_marginTop="@dimen/divide_10_dp"
-                    android:background="#5FAD4A"
+                    android:background="@color/magenta"
                     android:visibility="gone" />
             </LinearLayout>
 
@@ -82,7 +82,7 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/line_1_px"
         android:layout_below="@+id/rl_top"
-        android:background="@color/linenew_color"></View>
+        android:background="@color/line_color"></View>
 
     <LinearLayout
         android:id="@+id/ll_topcontent"
@@ -127,7 +127,7 @@
                     android:layout_marginLeft="@dimen/divide_4_dp"
                     android:layout_marginTop="@dimen/divide_4_dp"
                     android:layout_toRightOf="@+id/tv_1"
-                    android:background="@color/linenew_color" />
+                    android:background="@color/line_color" />
 
                 <EditText
                     android:id="@+id/edt_phone"
@@ -160,7 +160,7 @@
             android:layout_below="@+id/rl_top"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
-            android:background="@color/linenew_color"></View>
+            android:background="@color/line_color"></View>
 
         <LinearLayout
             android:id="@+id/ll_code"
@@ -210,7 +210,7 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
                     android:text="获取验证码"
-                    android:textColor="#5FAD4A"
+                    android:textColor="@color/magenta"
                     android:textSize="@dimen/size_14_sp" />
             </RelativeLayout>
 
@@ -265,7 +265,7 @@
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
                     android:text="忘记密码"
-                    android:textColor="@color/green_5f"
+                    android:textColor="@color/member_bg"
                     android:textSize="@dimen/size_14_sp" />
             </RelativeLayout>
 
@@ -279,7 +279,7 @@
             android:layout_below="@+id/rl_top"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
-            android:background="@color/linenew_color"></View>
+            android:background="@color/line_color"></View>
 
 
         <LinearLayout
@@ -341,7 +341,7 @@
                     style="@style/WrapWrap"
                     android:layout_toRightOf="@+id/tv_userxieyititle"
                     android:text="  ydc_kotlin_shop服务协议"
-                    android:textColor="@color/green_5f"
+                    android:textColor="@color/magenta"
                     android:textSize="@dimen/size_14_sp" />
             </RelativeLayout>
 
@@ -367,7 +367,7 @@
                     android:layout_height="@dimen/line_1_px"
                     android:layout_alignParentLeft="true"
                     android:layout_marginTop="@dimen/divide_12_dp"
-                    android:background="@color/linenew_color"></View>
+                    android:background="@color/line_color"></View>
 
                 <TextView
                     android:id="@+id/tv_content"
@@ -385,7 +385,7 @@
                     android:layout_height="@dimen/line_1_px"
                     android:layout_marginTop="@dimen/divide_12_dp"
                     android:layout_toRightOf="@id/tv_content"
-                    android:background="@color/linenew_color"></View>
+                    android:background="@color/line_color"></View>
             </RelativeLayout>
 
             <RelativeLayout

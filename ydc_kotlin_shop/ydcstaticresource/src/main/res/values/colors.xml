@@ -3,14 +3,6 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
-    <color name="light_gray">#bfbfbf</color>
-    <color name="update_canvas_color">#ffffff</color>
-    <color name="update_text_color">#ee333333</color>
-    <color name="update_main_color">#348fea</color>
-    <color name="update_pgb_startcolor_pg">#85B0E9</color>
-    <color name="update_pgb_startcolor_bg">#BEBEBE</color>
-    <color name="update_pgb_endcolor_pg">#165CBC</color>
-    <color name="update_pgb_endcolor_bg">#F5F5F5</color>
 
 
     <!-- 通用颜色的定义 -->

@@ -5,6 +5,8 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.ydc.config.SharePreferenceKey
+import com.ydc.datarepository.sphelper.SharedPreferencesHelper
 import com.ydckotlinshop.app.R
 import com.ydckotlinshop.app.account.bean.TokenBean
 import com.ydckotlinshop.app.account.bean.UserBean
@@ -52,11 +54,13 @@ class LoginActivity: BaseMvpActivity<LoginContract.IPresenter>(), LoginContract.
     }
 
     override fun loginError(errorMsg: String?) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        Toast.makeText(this,errorMsg,Toast.LENGTH_LONG).show();
     }
 
     override fun loginSuccess(tokenBean: TokenBean) {
-        var  token=tokenBean.token;
+        var  token=tokenBean.token
+        SharedPreferencesHelper.put(this,SharePreferenceKey.Object.TOKEN,token)
+
         val intent = Intent(this, MainActivity::class.java)
         startActivity(intent)
         finish()
