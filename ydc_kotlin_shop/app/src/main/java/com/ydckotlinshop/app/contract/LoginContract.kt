@@ -13,10 +13,11 @@ import com.ydc.mvp.contract.IModelContract
 import okhttp3.ResponseBody
 
 /**
- * @Author Kotlin MVP Plugin
- * @Date 2019/08/28
- * @Description input description
- **/
+ * @Description
+ * @Author ydc
+ * @CreateDate 2019/11/25
+ * @Version 1.0
+ */
 interface LoginContract {
 
   interface IView : IViewContract{
@@ -29,6 +30,6 @@ interface LoginContract {
   }
 
   interface IModel : IModelContract{
-    fun getUserInfo(appid: String,appsecret: String,username: String,password: String, subscriber: DisposableObserver<Feed<TokenBean>>): Observable<Feed<TokenBean>>
+    fun login(appid: String,appsecret: String,username: String,password: String, subscriber: DisposableObserver<Feed<TokenBean>>): Observable<Feed<TokenBean>>
   }
 }

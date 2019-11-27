@@ -56,6 +56,9 @@ class LoginActivity: BaseMvpActivity<LoginContract.IPresenter>(), LoginContract.
     override fun loginError(errorMsg: String?) {
         Toast.makeText(this,errorMsg,Toast.LENGTH_LONG).show();
     }
+    override fun showToast(text: String?) {
+        Toast.makeText(this,text,Toast.LENGTH_LONG).show();
+    }
 
     override fun loginSuccess(tokenBean: TokenBean) {
         var  token=tokenBean.token

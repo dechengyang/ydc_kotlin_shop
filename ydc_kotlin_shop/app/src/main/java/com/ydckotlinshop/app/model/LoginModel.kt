@@ -12,14 +12,15 @@ import com.ydc.mvp.presenter.getContextEx
 import okhttp3.ResponseBody
 
 /**
- * @Author Kotlin MVP Plugin
- * @Date 2019/08/28
- * @Description input description
- **/
+ * @Description
+ * @Author ydc
+ * @CreateDate 2019/11/25
+ * @Version 1.0
+ */
 class LoginModel : BaseModel(), LoginContract.IModel {
-  override fun getUserInfo(appid: String,appsecret: String,username: String,password: String, subscriber: DisposableObserver<Feed<TokenBean>>): Observable<Feed<TokenBean>> {
+  override fun login(appid: String,appsecret: String,username: String,password: String, subscriber: DisposableObserver<Feed<TokenBean>>): Observable<Feed<TokenBean>> {
 
-    val observable = RetrofitFactory.instance.httpApi!!.getUserInfoByName(appid,appsecret,username,password)
+    val observable = RetrofitFactory.instance.httpApi!!.login(appid,appsecret,username,password)
     RetrofitFactory.instance.toSubscribe(observable, subscriber)
     return observable
   }

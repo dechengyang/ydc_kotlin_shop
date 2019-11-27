@@ -1,13 +1,12 @@
 package com.zhenggzh.dream.retrofitandrxjavademo.netutils
 
 
-import com.example.kotlinfirst.app.BaseConstant
 import com.example.kotlinfirst.app.BaseConstant.GITHUB_CLIENT_ID
 import com.example.kotlinfirst.app.BaseConstant.GITHUB_CLIENT_SECRET
-import com.example.kotlinfirst.network.HttpApi
 import com.example.kotlinfirst.utils.NetUtil
-import com.example.kotlinfirst.network.URLConstant
 import com.orhanobut.logger.Logger
+import com.ydc.config.ApiConfig
+import com.ydckotlinshop.app.interfaceapi.IApiService
 import com.ydckotlinshop.app.main.App
 
 import io.reactivex.Observable
@@ -26,17 +25,20 @@ import retrofit2.Retrofit
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import retrofit2.converter.gson.GsonConverterFactory
 
+
 /**
- * Created by 眼神 on 2018/3/27.
- * 封装Retrofit配置
+ * @Description 封装Retrofit配置
+ * @Author ydc
+ * @CreateDate 2019/11/27
+ * @Version 1.0
  */
 
 class RetrofitFactory() {
 
   companion object {
     //TODO 填写自己的包名
-    val CACHE_NAME = "yourApkName"
-    var BASE_URL = URLConstant.BASE_URL
+    val CACHE_NAME = "ydc_kotlin_shop"
+    var BASE_URL = ApiConfig.BASE_URL
     private val DEFAULT_CONNECT_TIMEOUT = 30
     private val DEFAULT_WRITE_TIMEOUT = 30
     private val DEFAULT_READ_TIMEOUT = 30
@@ -50,7 +52,7 @@ class RetrofitFactory() {
 
   var retrofit: Retrofit? = null
 
-  var httpApi: HttpApi? = null
+  var httpApi: IApiService? = null
   /**
    * 请求失败重连次数
    */
@@ -144,7 +146,7 @@ class RetrofitFactory() {
       .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
       .baseUrl(BASE_URL)
       .build()
-    httpApi = retrofit!!.create<HttpApi>(HttpApi::class.java!!)
+    httpApi = retrofit!!.create<IApiService>(IApiService::class.java!!)
   }
 
   //在访问HttpMethods时创建单例
@@ -160,7 +162,7 @@ class RetrofitFactory() {
       .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
       .baseUrl(baseUrl)
       .build()
-    httpApi = retrofit!!.create<HttpApi>(HttpApi::class.java!!)
+    httpApi = retrofit!!.create<IApiService>(IApiService::class.java!!)
   }
 
   /**

@@ -15,8 +15,18 @@ import java.net.SocketTimeoutException
 import java.net.UnknownHostException
 import javax.net.ssl.SSLHandshakeException
 
+
+/**
+ * @Description 处理网络数据处理完成后的回调响应（观察者）
+ * @Author ydc
+ * @CreateDate 2019/11/27
+ * @Version 1.0
+ */
 class OnSuccessAndFaultSub<T> constructor(mOnSuccessAndFaultListener: OnSuccessAndFaultListener<T>): DisposableObserver<Feed<T>>(), ProgressCancelListener {
 
+  private object Status {
+    const val SUCCESS = "1000"
+  }
   private var showProgress = true
   private var mOnSuccessAndFaultListener: OnSuccessAndFaultListener<T>
   private var mProgressDialog : ProgressDialog? =null
@@ -66,29 +76,16 @@ class OnSuccessAndFaultSub<T> constructor(mOnSuccessAndFaultListener: OnSuccessA
 
 
   /**
-   * 当result等于1回调给调用者，否则自动显示错误信息，若错误信息为401跳转登录页面。
-   * ResponseBody  body = response.body();//获取响应体
-   * InputStream inputStream = body.byteStream();//获取输入流
-   * byte[] bytes = body.bytes();//获取字节数组
-   * String str = body.string();//获取字符串数据
+   * 网络请求响应回调
    */
   override fun onNext(t: Feed<T>) {
     try {
-
-      //val result = CompressUtils.decompress(body.byteStream())
-//      val result = T.data;
-//      Log.e("body", result)
+    if(t.code.equals(Status.SUCCESS)){
+      mOnSuccessAndFaultListener.onSuccess(t.message)
       mOnSuccessAndFaultListener.onSuccess(t.data)
-      //TODO 天气接口返回数据格式没有resultCode等公共信息，onNext方法请根据自己公司接口返回的数据来调整
-      //            JSONObject jsonObject = new JSONObject(result);
-      //            int resultCode = jsonObject.getInt("ErrorCode");
-      //            if (resultCode == 1) {
-      //                mOnSuccessAndFaultListener.onSuccess(result);
-      //            } else {
-      //                String errorMsg = jsonObject.getString("ErrorMessage");
-      //                mOnSuccessAndFaultListener.onFault(errorMsg);
-      //                Log.e("OnSuccessAndFaultSub", "errorMsg: " + errorMsg);
-      //            }
+      }else{
+      mOnSuccessAndFaultListener.onFault("网络连接超时")
+    }
     } catch (e: Exception) {
       e.printStackTrace()
     }

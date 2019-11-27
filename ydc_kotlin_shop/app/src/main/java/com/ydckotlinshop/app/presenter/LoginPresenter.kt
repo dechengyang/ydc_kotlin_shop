@@ -1,7 +1,6 @@
 package com.ydckotlinshop.app.presenter
 
 import com.ydc.mvp.presenter.BaseMvpPresenter
-import com.example.kotlinfirst.network.GitHubSubscribe
 import com.example.kotlinfirst.network.OnSuccessAndFaultListener
 import com.example.kotlinfirst.network.OnSuccessAndFaultSub
 import com.example.kotlinfirst.utils.GsonUtils
@@ -20,13 +19,17 @@ import com.ydc.mvp.presenter.getContextEx
 import java.util.*
 
 /**
- * @Author Kotlin MVP Plugin
- * @Date 2019/08/28
- * @Description input description
- **/
+ * @Description
+ * @Author ydc
+ * @CreateDate 2019/11/25
+ * @Version 1.0
+ */
 class LoginPresenter : BaseMvpPresenter<LoginContract.IView, LoginContract.IModel>(), LoginContract.IPresenter{
     override fun login(appid: String,appsecret: String,username: String,password: String) {
-            getModel().getUserInfo(appid,appsecret,username,password, OnSuccessAndFaultSub(object : OnSuccessAndFaultListener<TokenBean> {
+            getModel().login(appid,appsecret,username,password, OnSuccessAndFaultSub(object : OnSuccessAndFaultListener<TokenBean> {
+                override fun onSuccess(successMsg: String) {
+                    getMvpView().showToast(successMsg)
+                }
                 override fun onSuccess(data: TokenBean) {
 
                     var c=data.token;
