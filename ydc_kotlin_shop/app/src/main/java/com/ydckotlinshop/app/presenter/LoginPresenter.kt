@@ -25,8 +25,8 @@ import java.util.*
  * @Version 1.0
  */
 class LoginPresenter : BaseMvpPresenter<LoginContract.IView, LoginContract.IModel>(), LoginContract.IPresenter{
-    override fun login(appid: String,appsecret: String,username: String,password: String) {
-            getModel().login(appid,appsecret,username,password, OnSuccessAndFaultSub(object : OnSuccessAndFaultListener<TokenBean> {
+    override fun login(params:Map<String, String>) {
+            getModel().login(params, OnSuccessAndFaultSub(object : OnSuccessAndFaultListener<TokenBean> {
                 override fun onSuccess(successMsg: String) {
                     getMvpView().showToast(successMsg)
                 }

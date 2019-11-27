@@ -18,9 +18,9 @@ import okhttp3.ResponseBody
  * @Version 1.0
  */
 class LoginModel : BaseModel(), LoginContract.IModel {
-  override fun login(appid: String,appsecret: String,username: String,password: String, subscriber: DisposableObserver<Feed<TokenBean>>): Observable<Feed<TokenBean>> {
+  override fun login(params:Map<String, String>, subscriber: DisposableObserver<Feed<TokenBean>>): Observable<Feed<TokenBean>> {
 
-    val observable = RetrofitFactory.instance.httpApi!!.login(appid,appsecret,username,password)
+    val observable = RetrofitFactory.instance.httpApi!!.login(params)
     RetrofitFactory.instance.toSubscribe(observable, subscriber)
     return observable
   }

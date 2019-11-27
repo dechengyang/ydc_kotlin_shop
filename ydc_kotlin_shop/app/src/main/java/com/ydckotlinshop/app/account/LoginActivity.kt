@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.ydc.config.Constant
 import com.ydc.config.SharePreferenceKey
 import com.ydc.datarepository.sphelper.SharedPreferencesHelper
 import com.ydckotlinshop.app.R
@@ -15,6 +16,7 @@ import com.ydckotlinshop.app.main.MainActivity
 import com.ydckotlinshop.app.presenter.LoginPresenter
 import kotlinx.android.synthetic.main.activity_login.*
 import com.ydc.mvp.activity.BaseMvpActivity
+import java.util.HashMap
 
 class LoginActivity: BaseMvpActivity<LoginContract.IPresenter>(), LoginContract.IView{
 
@@ -25,12 +27,12 @@ class LoginActivity: BaseMvpActivity<LoginContract.IPresenter>(), LoginContract.
 //    }
     override fun  initView(){
         btn_login.setOnClickListener {
-//            Toast.makeText(this,"按钮被点击",Toast.LENGTH_LONG).show();
-//            val intent = Intent(this@LoginActivity, MainActivity::class.java)
-//            startActivity(intent)
-//            finish()
-
-            getPresenter().login("ydc20191111","ydc19491001","18721568888","123456")
+            val params = HashMap<String, String>()
+            params["appid"] = Constant.appId
+            params["appsecret"] = Constant.SECRETKEY
+            params["username"] = "18721568888"
+            params["password"] = "123456"
+            getPresenter().login(params)
         }
         ll_pwd.setOnClickListener {
             tv_pwd.setTextColor(-0xcccccd)

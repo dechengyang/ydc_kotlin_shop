@@ -26,10 +26,10 @@ interface LoginContract {
   }
 
   interface IPresenter : IPresenterContract {
-    fun login(appid: String,appsecret: String,username: String,password: String)
+    fun login(params:Map<String, String>)
   }
 
   interface IModel : IModelContract{
-    fun login(appid: String,appsecret: String,username: String,password: String, subscriber: DisposableObserver<Feed<TokenBean>>): Observable<Feed<TokenBean>>
+    fun login(params:Map<String, String>, subscriber: DisposableObserver<Feed<TokenBean>>): Observable<Feed<TokenBean>>
   }
 }
