@@ -4,9 +4,12 @@ import android.content.Context
 import android.net.ConnectivityManager
 import com.ydckotlinshop.app.main.App
 
+
 /**
- * Created by 眼神 on 2018/3/27.
- * 网络请求工具类
+ * @Description 网络请求工具类
+ * @Author ydc
+ * @CreateDate 2019/11/27
+ * @Version 1.0
  */
 object NetUtil {
 
