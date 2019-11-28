@@ -1,7 +1,9 @@
 package com.ydckotlinshop.app.main
 
+import android.content.pm.ActivityInfo
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Window
 import androidx.core.content.ContextCompat
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
@@ -26,6 +28,11 @@ class MainActivity : AppCompatActivity() {
     private var  myFragment: MyFragment?=null
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT//竖屏
+        requestWindowFeature(Window.FEATURE_NO_TITLE);//去除Title
+        if (getSupportActionBar() != null){
+            getSupportActionBar()!!.hide();
+        }
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         fragmentManager = supportFragmentManager
