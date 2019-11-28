@@ -14,7 +14,10 @@
 ****
 
 
-#### 测试账号:18721568888 密码:123456
+### 下载
+
+#### Apk下载链接(测试账号:18721568888 密码:123456)： [Apk下载链接](https://github.com/dechengyang/ydc_kotlin_shop/blob/master/apk/app-release.apk)
+
 
 #### Flutter商城项目实战:https://github.com/dechengyang/ydc_flutter_app
 
