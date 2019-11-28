@@ -84,7 +84,7 @@ class OnSuccessAndFaultSub<T> constructor(mOnSuccessAndFaultListener: OnSuccessA
       mOnSuccessAndFaultListener.onSuccess(t.message)
       mOnSuccessAndFaultListener.onSuccess(t.data)
       }else{
-      mOnSuccessAndFaultListener.onFault("网络连接超时")
+      mOnSuccessAndFaultListener.onFault(t.message)
     }
     } catch (e: Exception) {
       e.printStackTrace()

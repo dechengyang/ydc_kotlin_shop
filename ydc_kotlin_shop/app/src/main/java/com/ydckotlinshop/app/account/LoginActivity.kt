@@ -2,9 +2,13 @@ package com.ydckotlinshop.app.account
 
 import android.content.Intent
 import android.os.Bundle
+import android.text.TextUtils
 import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.ydc.base.util.ToastUtil
+import com.ydc.base.util.ValidateUtil
+import com.ydc.config.ApiConfig
 import com.ydc.config.Constant
 import com.ydc.config.SharePreferenceKey
 import com.ydc.datarepository.sphelper.SharedPreferencesHelper
@@ -20,6 +24,8 @@ import java.util.HashMap
 
 class LoginActivity: BaseMvpActivity<LoginContract.IPresenter>(), LoginContract.IView{
 
+
+    private var loginType = 1//0:密码登录 1:验证码登录 2：第三方登录
 //
 //    override fun onCreate(savedInstanceState: Bundle?) {
 //        super.onCreate(savedInstanceState)
@@ -27,12 +33,9 @@ class LoginActivity: BaseMvpActivity<LoginContract.IPresenter>(), LoginContract.
 //    }
     override fun  initView(){
         btn_login.setOnClickListener {
-            val params = HashMap<String, String>()
-            params["appid"] = Constant.appId
-            params["appsecret"] = Constant.SECRETKEY
-            params["username"] = "18721568888"
-            params["password"] = "123456"
-            getPresenter().login(params)
+            if (isAllow()) {
+                loginWithPwd()
+            }
         }
         ll_pwd.setOnClickListener {
             tv_pwd.setTextColor(-0xcccccd)
@@ -55,8 +58,50 @@ class LoginActivity: BaseMvpActivity<LoginContract.IPresenter>(), LoginContract.
 
     }
 
+
+    private fun loginWithPwd() {
+        val params = HashMap<String, String>()
+        params["appid"] = Constant.appId
+        params["appsecret"] = Constant.SECRETKEY
+        params["username"] = edt_phone.text.toString()
+        params["password"] = edt_pwd.text.toString();
+        getPresenter().login(params)
+    }
+
+    fun isAllow(): Boolean {
+        var flag = true
+        try {
+            if (TextUtils.isEmpty(edt_phone.text.toString().trim { it <= ' ' })) {
+                Toast.makeText(this, "请输入手机号码", Toast.LENGTH_SHORT).show()
+                flag = false
+                return flag
+            } else if (!ValidateUtil.checkPhoneNumber(edt_phone.text.toString().trim { it <= ' ' })) {
+                Toast.makeText(this, "请输入正确的手机号码", Toast.LENGTH_SHORT).show()
+                flag = false
+                return flag
+            }
+            if (TextUtils.isEmpty(edt_pwd.text.toString().trim { it <= ' ' })) {
+                Toast.makeText(this, "密码不能为空!", Toast.LENGTH_SHORT).show()
+                flag = false
+                return flag
+            } else {
+                //                if (loginType == 0) {
+                //                    if (edt_pwd.getText().toString().trim().length() < 6 || edt_pwd.getText().toString().trim().length() > 16) {
+                //                        Toast.makeText(this, "请输入6-16位字母或数字的密码!", Toast.LENGTH_SHORT).show();
+                //                    }
+                //                }
+            }
+
+        } catch (e: Exception) {
+            e.printStackTrace()
+        }
+
+        return flag
+    }
+
+
     override fun loginError(errorMsg: String?) {
-        Toast.makeText(this,errorMsg,Toast.LENGTH_LONG).show();
+        ToastUtil.showShort(this, errorMsg.toString())
     }
     override fun showToast(text: String?) {
         Toast.makeText(this,text,Toast.LENGTH_LONG).show();
@@ -74,4 +119,7 @@ class LoginActivity: BaseMvpActivity<LoginContract.IPresenter>(), LoginContract.
     override fun registerPresenter() = LoginPresenter::class.java
 
     override fun getLayoutId(): Int = R.layout.activity_login
+
+
+
 }

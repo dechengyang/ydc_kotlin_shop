@@ -56,4 +56,5 @@ dependencies {
     implementation project(':ydcmvp')
     implementation project(':ydcconfig')
     implementation project(':ydcdatarepository')
+    implementation project(':ydcbase')
 }
